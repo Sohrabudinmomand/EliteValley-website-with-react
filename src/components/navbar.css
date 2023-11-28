@@ -1,0 +1,106 @@
+/* RooTs for the navbar component */
+/* roots makes it easy to bring changes */
+:root {
+    --mainBackgroundColr: #ffffff;
+    --mainColor: #FF5722;
+    --text-color: #071920;
+    --hover-color: #FF5722;
+}
+
+/* STYLING THE HEADER STARTS HERE */
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 16px;
+    background: var(--mainBackgroundColr);
+}
+
+/* STYLING THE NAV BAR CONTENTS BOX */
+.navbar {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* STYLING THE NAVBAR LINKS */
+.a-tags-in-navbar {
+    margin: 0 0 0 50PX;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+/* STYLING FOR THE HEADER */
+.navbar .a-tags-in-navbar:hover {
+    color: var(--mainColor);
+}
+
+/* STYLING THE BARS OR THE HUMBURGER ICON */
+.header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--mainColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 20PX;
+}
+
+/* STYLING THE BUTTON FREE QOUTE */
+.free-quote {
+    padding: 8px 12px;
+    background-color: var(--mainColor);
+    color: #FFE7BB;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+/* MAKING IT RESPONSIVE */
+@media only screen and (max-width: 1030px) {
+    .header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header .navbar {
+        position: fixed;
+        top: -100vh;
+        right: 0;
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: var(--mainBackgroundColr);
+        transition: 1s;
+    }
+
+
+
+    .header .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    .navbar .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .navbar .a-tags-in-navbar {
+        font-size: 14px
+    }
+}

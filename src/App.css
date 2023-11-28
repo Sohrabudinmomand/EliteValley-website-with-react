@@ -1,5 +1,7 @@
+/* globle css to reset the default css of the browser */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
