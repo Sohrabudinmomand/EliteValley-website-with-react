@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React, { Fragment } from "react";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // using react Fragment becuase in here i am going to use 
+    // more than one parent Element
+    <Fragment>
+      <div className="navbar">
+        <h1>sohrab</h1>
+      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" component={Home} />
+        </Routes>
+      </BrowserRouter>
+    </Fragment>
   );
 }
 
