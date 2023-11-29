@@ -1,0 +1,245 @@
+/* THE ROOT CSS */
+:root {
+    --mainBackgroundColr: #ffffff;
+    --mainColor: #FF5722;
+    --text-color: #071920;
+    --hover-color: #FF5722;
+}
+
+/* STYLING THE CONTAINER DIV */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLING THE CONTENT BOX IN CONTAINER */
+.container-content {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
+.description-box {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* TITLE OF THE SECTION */
+.title-of-the-section {
+    color: var(--mainColor);
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+/* PARAGRAPH OF THE SECTION BELOW THE TITLE */
+.paragraph-of-the-section {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* STYLING THE DIV FOR TWO BUTTONS IN THE SECTION  */
+.box-for-buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GET IN TOUCH BUTTONS */
+.Get-in-touch {
+    color: #ffe7bb;
+    font-size: 14px;
+    background-color: var(--mainColor);
+    padding: 15px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+/* HOVER EFFECT FOR GET IN TOUCH BUTTON */
+.Get-in-touch:hover {
+    transform: translateY(-2px);
+    background-color: #ff8a66;
+}
+
+/* STYLING THE BUTTON THAT CONTAINS ONE BUTTON AND ON ICON */
+.making-elements-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+/* LERAN MORE BUTTON */
+.learn-more {
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 18px 10px 18px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.45px;
+    transition: 0.2s;
+}
+
+/* RIGHT ARROW BESIDES THE ICON */
+.right-arrow {
+    font-size: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* HOVER EFFECT FOR BUTTON LEARN MORE AND RIGHT ARROW ICON */
+.making-elements-flex:hover,
+.learn-more:hover {
+    color: var(--hover-color);
+}
+
+/* STYLING THE IMAGE BOX THAT CONTAINS THE IMAGE OF THE SECTION  */
+.image-box {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* THE IMAGE OF THE SECTION */
+.image-of-the-hero-section {
+    width: 380px;
+    height: 460px;
+}
+
+/* Responsived in min width 1920px */
+@media (min-width: 1920px) {
+    .container-content {
+        width: 60%;
+    }
+}
+
+/* Responsived in max width 1920px */
+@media (max-width: 1920px) {
+    .container-content {
+        width: 70%;
+    }
+}
+
+/* Responsived in max width 1400px */
+@media (max-width: 1400px) {
+    .container-content {
+        width: 80%;
+    }
+}
+
+/* Responsived in max width 1200px */
+@media (max-width: 1200px) {
+    .container-content {
+        width: 90%;
+    }
+}
+
+/* Responsived in max width 992px */
+@media (max-width: 992px) {
+
+    /* STYLING THE CONTENT BOX IN CONTAINER */
+    .container-content {
+        width: 95%;
+    }
+
+    /* TITLE OF THE SECTION */
+    .title-of-the-section {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    /* PARAGRAPH OF THE SECTION BELOW THE TITLE */
+    .paragraph-of-the-section {
+        font-size: 14px;
+    }
+
+    /* GET IN TOUCH BUTTONS */
+    .Get-in-touch {
+        font-size: 14px;
+        padding: 15px 20px;
+
+    }
+}
+
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+
+    /* making the display of the image none */
+    .image-box,
+    .image-of-the-hero-section {
+        display: none;
+    }
+
+    /* STYLING THE CONTENT BOX IN CONTAINER */
+    .container-content {
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    /* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
+    .description-box {
+        width: 100%;
+    }
+}
+
+/* Responsived in max width 567px */
+@media (max-width: 576px) {
+
+    /* STYLING THE CONTENT BOX IN CONTAINER */
+    .container-content {
+        width: 90%;
+    }
+}
+
+/* Responsived in max width 400px */
+@media (max-width: 400px) {
+
+    /* TITLE OF THE SECTION */
+    .title-of-the-section {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+    }
+
+    /* GET IN TOUCH BUTTONS */
+    .Get-in-touch {
+        color: #ffe7bb;
+        font-size: 14px;
+        background-color: var(--mainColor);
+        padding: 10px 6px;
+    }
+
+    /* LERAN MORE BUTTON */
+    .learn-more {
+        padding: 10px 6px 10px 10px;
+    }
+}

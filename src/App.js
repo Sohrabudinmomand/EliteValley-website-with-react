@@ -6,7 +6,7 @@ import Services from "./pages/Services";
 import Solutions from "./pages/Solutions";
 import CodeCamp from "./pages/CodeComp"; // Corrected import path
 import Contact from "./pages/Contact";
-import Navbar from "./components/NavBar";
+import Navbar from "../src/components/navbar/NavBar";
 import "./App.css";
 
 function App() {

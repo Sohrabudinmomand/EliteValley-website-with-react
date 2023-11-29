@@ -7,19 +7,29 @@
     --hover-color: #FF5722;
 }
 
-/* STYLING THE HEADER STARTS HERE */
+/* STYLING THE HEADER DIV BOX */
 .header {
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 0 0 16px;
     background: var(--mainBackgroundColr);
+    border: 1px solid #FFE7BB;
 }
 
 /* STYLING THE NAV BAR CONTENTS BOX */
 .navbar {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLING THE MANAGMENT PART */
+.nav-content-managment {
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -66,19 +76,75 @@
     border: none;
 }
 
-/* MAKING IT RESPONSIVE */
-@media only screen and (max-width: 1030px) {
+/* Responsived in min width 1920px */
+@media (min-width: 1920px) {
+    .navbar {
+        width: 60%;
+    }
+}
+
+/* Responsived in max width 1920px */
+@media (max-width: 1920px) {
+
+    /* STYLING THE NAV BAR CONTENTS BOX */
+    .navbar {
+        width: 70%;
+    }
+}
+
+/* Responsived in max width 1400px */
+@media (max-width: 1400px) {
+
+    /* STYLING THE NAV BAR CONTENTS BOX */
+    .navbar {
+        width: 80%;
+    }
+}
+
+/* Responsived in max width 1200px */
+@media (max-width: 1200px) {
+
+    /* STYLING THE NAVBAR LINKS */
+    .a-tags-in-navbar {
+        margin: 0 0 0 20PX;
+    }
+}
+
+/* Responsived in max width 992px */
+@media (max-width: 992px) {
+
+    /* STYLING THE NAV BAR CONTENTS BOX */
+    .navbar {
+        width: 95%;
+    }
+
+    /* STYLING THE NAVBAR LINKS */
+    .a-tags-in-navbar {
+        margin: 0 0 0 15PX;
+    }
+}
+
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+
+    /* STYLING THE HEADER DIV BOX */
+    .header {
+        justify-content: space-between;
+    }
+
+    /* STYLING THE BARS OR THE HUMBURGER ICON */
     .header .nav-btn {
         visibility: visible;
         opacity: 1;
     }
 
+    /* STYLING THE NAV BAR CONTENTS BOX */
     .header .navbar {
         position: fixed;
         top: -100vh;
         right: 0;
         height: 80%;
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -88,7 +154,12 @@
         transition: 1s;
     }
 
-
+    /* STYLING THE MANAGMENT PART */
+    .nav-content-managment {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
 
     .header .responsive_nav {
         transform: translateY(100vh);
