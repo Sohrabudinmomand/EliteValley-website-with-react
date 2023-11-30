@@ -147,7 +147,7 @@ const WhyWeExistSection = () => {
           {/* the box below is for descriptions like title, paragraph and button*/}
           <div className="description-box-WhyWeExist">
             <div class="making-the-two-span-in-one-row">
-              <span class="span-line">________</span>
+              <span class="span-line">______</span>
               <span class="automatic-tools">Automatic Tools</span>
             </div>
             <h1 className="title-of-the-WhyWeExist-section">

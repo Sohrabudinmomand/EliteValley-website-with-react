@@ -312,56 +312,103 @@
 }
 
 /* Responsived in max width 768px */
-/* @media (max-width: 768px) { */
+@media (max-width: 768px) {
 
-/* making the display of the image none */
-/* .image-box,
-    .image-of-the-hero-section {
-        display: none;
-    } */
 
-/* STYLING THE CONTENT BOX IN CONTAINER */
-/* .container-content {
+    .container-WhyWeExist-content {
         width: 80%;
-        height: 100vh;
         flex-direction: column;
-    } */
-
-/* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
-/* .description-box {
-        width: 100%;
     }
-} */
 
-/* Responsived in max width 567px */
-/* @media (max-width: 576px) { */
+    .bg-banner-WhyWeExist {
+        width: 100%;
+        height: 110vh;
+        flex-direction: column;
+    }
 
-/* STYLING THE CONTENT BOX IN CONTAINER */
-/* */
+
+    .description-box-WhyWeExist {
+        width: 100%;
+        height: 50vh;
+        order: 2;
+    }
+
+
+    .image-box-WhyWeExist {
+        width: 100%;
+        height: 50vh;
+        align-items: center;
+        order: 1;
+    }
+
+
+    .mouse-svg {
+        top: 38%;
+        left: 50%;
+    }
+
+    .DownArrowanimation {
+        top: 19%;
+        left: 15%;
+    }
+
+
+    .LeftToRightAnimation {
+        top: 42%;
+        left: 72%;
+    }
+}
 
 /* Responsived in max width 400px */
-/* @media (max-width: 400px) { */
+@media (max-width: 400px) {
+    .image-of-the-WhyWeExist {
+        width: 220px;
+        height: 220px;
+    }
 
-/* TITLE OF THE SECTION */
-/* .title-of-the-section { */
-/* .container-content {
-        width: 90%;
+    .automatic-tools {
+        font-size: 14px;
     }
-}      font-size: 20px;
-        font-weight: 800;
-        line-height: 30px;
+
+
+    .span-line {
+        padding: 0 10px 10px 0;
+        color: var(--text-color);
     }
+
+    .title-of-the-WhyWeExist-section {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .mouse-svg {
+        display: none;
+    }
+
+    .DownArrowanimation {
+        top: 19%;
+        left: 15%;
+    }
+
+
+    .LeftToRightAnimation {
+        top: 40%;
+        left: 70%;
+    }
+
+
 
     /* GET IN TOUCH BUTTONS */
-/* .Get-in-touch {
-        color: #ffe7bb;
+    .Get-in-touch-WhyWeExist {
         font-size: 14px;
-        background-color: var(--mainColor);
         padding: 10px 6px;
-    } */
+    }
 
-/* LERAN MORE BUTTON */
-/* .learn-more {
+    .learn-more-WhyWeExist {
         padding: 10px 6px 10px 10px;
-    } */
-/* } */
+
+        line-height: 15px;
+    }
+
+}
