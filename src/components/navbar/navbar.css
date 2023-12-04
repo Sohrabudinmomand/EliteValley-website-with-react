@@ -12,6 +12,7 @@
     width: 100%;
     height: 70px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0 0 0 16px;
@@ -19,12 +20,28 @@
     border: 1px solid #FFE7BB;
 }
 
+/* logo box of the page */
+.logo-box {
+    width: 20%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* logo image */
+.logo-img {
+    width: 120px;
+    height: 70px;
+}
+
 /* STYLING THE NAV BAR CONTENTS BOX */
 .navbar {
     width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -33,23 +50,27 @@
     width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 
 /* STYLING THE NAVBAR LINKS */
 .a-tags-in-navbar {
-    margin: 0 0 0 50PX;
     color: var(--text-color);
     text-decoration: none;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    padding: 0px 30px;
     transition: 0.3s;
 }
 
 /* STYLING FOR THE HEADER */
 .navbar .a-tags-in-navbar:hover {
+    color: var(--mainColor);
+}
+
+.navbar .a-tags-in-navbar:active {
     color: var(--mainColor);
 }
 

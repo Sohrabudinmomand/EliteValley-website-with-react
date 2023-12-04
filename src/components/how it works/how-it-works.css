@@ -1,0 +1,221 @@
+/* THE ROOT CSS */
+:root {
+    --mainBackgroundColr: #ffffff;
+    --mainColor: #FF5722;
+    --text-color: #071920;
+    --hover-color: #FF5722;
+}
+
+/* STYLING THE CONTAINER */
+.container-how-it-works-section {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.content-managment-box {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #FF5722 3px solid;
+}
+
+.content-how-it-works-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
+.description-box-how-it-works {
+    width: 35%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* bringing two span elements in one row */
+.making-the-two-span-in-one-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* a line befor automatice tools text */
+.span-line {
+    padding: 0 10px 10px 0;
+    color: var(--text-color);
+}
+
+.automatic-tools {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+
+/* TITLE OF THE SECTION */
+.title-of-the-how-it-works-section {
+    color: var(--mainColor);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+/* PARAGRAPH OF THE SECTION BELOW THE TITLE */
+.paragraph-of-the-how-it-works-section {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 22px;
+}
+
+/* STYLING THE DIV FOR TWO BUTTONS IN THE SECTION  */
+.box-for-buttons-how-it-works {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GET IN TOUCH BUTTONS */
+.Get-in-touch-how-it-works {
+    color: #ffe7bb;
+    font-size: 14px;
+    background-color: var(--mainColor);
+    padding: 15px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+/* HOVER EFFECT FOR GET IN TOUCH BUTTON */
+.Get-in-touch-how-it-works:hover {
+    transform: translateY(-2px);
+    background-color: #ff8a66;
+}
+
+/* STYLING THE BUTTON THAT CONTAINS ONE BUTTON AND ON ICON */
+.making-elements-flex-how-it-works {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+/* LERAN MORE BUTTON */
+.learn-more-how-it-works {
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 18px 10px 18px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.45px;
+    transition: 0.2s;
+}
+
+/* RIGHT ARROW BESIDES THE ICON */
+.right-arrow {
+    font-size: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* HOVER EFFECT FOR BUTTON LEARN MORE AND RIGHT ARROW ICON */
+.making-elements-flex-how-it-works:hover,
+.learn-more-how-it-works:hover {
+    color: var(--hover-color);
+}
+
+.card-descriptions-box-in-how-it-works {
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.managment-card-content {
+    width: 100%;
+    height: 70vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #ffe7bb;
+}
+
+
+
+.image-payment-how-it-works {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 9px 11px 23px 0px rgba(6, 61, 79, 0.12);
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.title-cards-how-it-works {
+    color: var(--mainColor);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 0px 10px 0px;
+}
+
+.paragraph-cards-how-it-works {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0px 0px 10px 0px;
+    ;
+}
+
+
+
+
+
+
+
+
+.sub-content-how-it-works-section {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: #071920 2px solid;
+}

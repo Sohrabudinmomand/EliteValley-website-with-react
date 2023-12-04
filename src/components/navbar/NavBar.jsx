@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Logo from "../../assets/logo-of-the-page.png";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
@@ -11,11 +12,13 @@ function Navbar() {
   };
 
   return (
-    // HEADER STARTS HERE
+    // THE HEADER STARTS HERE
     <header className="header">
-      {/* THE LOGO */}
-      <h2 className="logo-content">EliteValley</h2>
-      {/*  */}
+      {/* DIV BELOW USED FOR LOGO */}
+      <div className="logo-box">
+        <img className="logo-img" src={Logo} alt="logo" />
+      </div>
+      {/* THE NAVBAR STARTS HERE */}
       <nav className="navbar" ref={navRef}>
         <div className="nav-content-managment">
           <Link to="/" className="a-tags-in-navbar">
@@ -42,12 +45,12 @@ function Navbar() {
         </button>
         <button className="free-quote">Free Quote</button>
       </nav>
-
+      {/* THE NAVBAR ENDS HERE */}
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
       </button>
     </header>
-    // HEADER ENDS HERE
+    // THE HEADER ENDS HERE
   );
 }
 

@@ -22,8 +22,6 @@
     left: 51%;
     width: 20px;
     height: 149.277px;
-
-
 }
 
 .DownArrowanimation {
@@ -51,7 +49,6 @@
     }
 }
 
-
 .LeftToRightAnimation {
     position: absolute;
     top: 68%;
@@ -76,16 +73,6 @@
         transform: translateX(0);
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 .container-WhyWeExist-content {
     width: 80%;
@@ -236,17 +223,6 @@
     height: 280px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
     .container-WhyWeExist-content {
@@ -313,8 +289,6 @@
 
 /* Responsived in max width 768px */
 @media (max-width: 768px) {
-
-
     .container-WhyWeExist-content {
         width: 80%;
         flex-direction: column;
@@ -333,14 +307,12 @@
         order: 2;
     }
 
-
     .image-box-WhyWeExist {
         width: 100%;
         height: 50vh;
         align-items: center;
         order: 1;
     }
-
 
     .mouse-svg {
         top: 38%;
@@ -351,7 +323,6 @@
         top: 19%;
         left: 15%;
     }
-
 
     .LeftToRightAnimation {
         top: 42%;
