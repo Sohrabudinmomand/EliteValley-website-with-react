@@ -9,16 +9,18 @@
 /* STYLING THE CONTAINER */
 .container-WhyWeExist {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
+/* THE MOUSE SVG ICON */
 .mouse-svg {
     position: absolute;
-    top: 67%;
+    top: 65%;
     left: 51%;
     width: 20px;
     height: 149.277px;
@@ -35,6 +37,7 @@
     transition: transform 10s ease-in-out;
 }
 
+/* ANIMATIONS WITH CSS FOR SVG ICONS */
 @keyframes DownArrowanimation {
     0% {
         transform: translateY(0);
@@ -74,18 +77,11 @@
     }
 }
 
-.container-WhyWeExist-content {
-    width: 80%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
+/* STYLING THE BACKGROUND BANNER */
 .bg-banner-WhyWeExist {
     width: 100%;
-    height: 65vh;
+    height: 100vh;
     background-image: url(../../assets/background-banner-why-we-exist-section.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,8 +89,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
+
+
+
+/* STYLING THE CONTENT CONTAINER */
+.container-WhyWeExist-content {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
 .description-box-WhyWeExist {
@@ -104,6 +113,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 10px;
 }
 
 
@@ -115,13 +125,13 @@
     align-items: center;
 }
 
-/* a line befor automatice tools text */
+/* a line befor why we exist text */
 .span-line {
     padding: 0 10px 10px 0;
     color: var(--text-color);
 }
 
-.automatic-tools {
+.why-we-exist {
     color: var(--text-color);
     font-size: 18px;
 }
@@ -130,11 +140,11 @@
 /* TITLE OF THE SECTION */
 .title-of-the-WhyWeExist-section {
     color: var(--mainColor);
-    font-size: 44px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 400;
-    line-height: 60px;
-    margin-bottom: 20px;
+    line-height: 72px;
+    margin-bottom: 10px;
 }
 
 /* PARAGRAPH OF THE SECTION BELOW THE TITLE */
@@ -142,7 +152,8 @@
     color: var(--text-color);
     font-size: 16px;
     font-style: normal;
-    line-height: 22px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 /* STYLING THE DIV FOR TWO BUTTONS IN THE SECTION  */
@@ -221,12 +232,34 @@
 .image-of-the-WhyWeExist {
     width: 280px;
     height: 280px;
+    margin-bottom: 45px;
 }
 
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
     .container-WhyWeExist-content {
-        width: 60%;
+        width: 70%;
+    }
+
+    .mouse-svg {
+        top: 68%;
+        left: 51%;
+        width: 30px;
+        height: 149.277px;
+    }
+
+    .DownArrowanimation {
+        top: 44%;
+        left: 57%;
+        width: 30px;
+        height: 149.277px;
+    }
+
+    .LeftToRightAnimation {
+        top: 68%;
+        left: 69%;
+        width: 50px;
+        height: 149.277px;
     }
 }
 
@@ -236,21 +269,37 @@
         width: 70%;
     }
 
-    .description-box-WhyWeExist {
-        gap: 10px;
+    .mouse-svg {
+        top: 68%;
+        left: 51%;
+        width: 30px;
+        height: 149.277px;
+    }
+
+    .DownArrowanimation {
+        top: 44%;
+        left: 57%;
+        width: 30px;
+        height: 149.277px;
+    }
+
+    .LeftToRightAnimation {
+        top: 68%;
+        left: 69%;
+        width: 50px;
+        height: 149.277px;
     }
 }
+
+
 
 /* Responsived in max width 1400px */
 @media (max-width: 1400px) {
     .container-WhyWeExist-content {
         width: 80%;
     }
-
-    .description-box-WhyWeExist {
-        gap: 5px;
-    }
 }
+
 
 /* Responsived in max width 1200px */
 @media (max-width: 1200px) {
@@ -259,36 +308,9 @@
     }
 }
 
-/* Responsived in max width 992px */
+
+
 @media (max-width: 992px) {
-
-    /* STYLING THE CONTENT BOX IN CONTAINER */
-    .container-WhyWeExist-content {
-        width: 95%;
-    }
-
-    /* TITLE OF THE SECTION */
-    .title-of-the-WhyWeExist-section {
-        font-size: 28px;
-        font-weight: 600;
-        line-height: 40px;
-    }
-
-    /* PARAGRAPH OF THE SECTION BELOW THE TITLE */
-    .paragraph-of-the-WhyWeExist-section {
-        font-size: 14px;
-    }
-
-    /* GET IN TOUCH BUTTONS */
-    .Get-in-touch-WhyWeExist {
-        font-size: 14px;
-        padding: 15px 20px;
-
-    }
-}
-
-/* Responsived in max width 768px */
-@media (max-width: 768px) {
     .container-WhyWeExist-content {
         width: 80%;
         flex-direction: column;
@@ -296,26 +318,31 @@
 
     .bg-banner-WhyWeExist {
         width: 100%;
-        height: 110vh;
+        height: 140vh;
         flex-direction: column;
     }
 
 
     .description-box-WhyWeExist {
+        height: 60vh;
+        gap: 5px;
         width: 100%;
-        height: 50vh;
         order: 2;
+    }
+
+    .title-of-the-WhyWeExist-section {
+        line-height: 60px;
     }
 
     .image-box-WhyWeExist {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         align-items: center;
         order: 1;
     }
 
     .mouse-svg {
-        top: 38%;
+        top: 35%;
         left: 50%;
     }
 
@@ -330,56 +357,38 @@
     }
 }
 
-/* Responsived in max width 400px */
-@media (max-width: 400px) {
-    .image-of-the-WhyWeExist {
-        width: 220px;
-        height: 220px;
-    }
-
-    .automatic-tools {
-        font-size: 14px;
-    }
-
-
-    .span-line {
-        padding: 0 10px 10px 0;
-        color: var(--text-color);
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+    .container-WhyWeExist-content {
+        width: 70%;
     }
 
     .title-of-the-WhyWeExist-section {
         font-size: 34px;
         line-height: 40px;
-        margin-bottom: 10px;
-    }
-
-    .mouse-svg {
-        display: none;
     }
 
     .DownArrowanimation {
-        top: 19%;
-        left: 15%;
+        display: none;
     }
-
 
     .LeftToRightAnimation {
-        top: 40%;
-        left: 70%;
+        display: none;
     }
 
+    .box-for-buttons-WhyWeExist {
+        margin-top: 10px;
+    }
+}
 
-
-    /* GET IN TOUCH BUTTONS */
-    .Get-in-touch-WhyWeExist {
-        font-size: 14px;
-        padding: 10px 6px;
+/* Responsived in max width 400px */
+@media (max-width: 576px) {
+    .container-WhyWeExist-content {
+        width: 90%;
     }
 
-    .learn-more-WhyWeExist {
-        padding: 10px 6px 10px 10px;
-
-        line-height: 15px;
+    .image-of-the-WhyWeExist {
+        width: 220px;
+        height: 220px;
     }
-
 }

@@ -148,7 +148,7 @@ const WhyWeExistSection = () => {
           <div className="description-box-WhyWeExist">
             <div class="making-the-two-span-in-one-row">
               <span class="span-line">______</span>
-              <span class="automatic-tools">Automatic Tools</span>
+              <span class="why-we-exist">Why We Exist</span>
             </div>
             <h1 className="title-of-the-WhyWeExist-section">
               Every thing starts with Why

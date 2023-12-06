@@ -2,6 +2,8 @@ import React from "react";
 // importing the arrow icon to use with button learn more
 import { FaArrowRight } from "react-icons/fa";
 
+import subContentImage from "../../assets/box-img-in-why-we-exist-section.png";
+
 import FirstIconBox from "../../assets/icon-1-in-cards.png";
 import SecondIconBox from "../../assets/icon-2-in-cards.png";
 
@@ -18,7 +20,7 @@ const HowItWorks = () => {
           <div className="description-box-how-it-works">
             <div class="making-the-two-span-in-one-row">
               <span class="span-line">______</span>
-              <span class="automatic-tools">How it work</span>
+              <span class="automatic-tools">How It Works</span>
             </div>
             <h1 className="title-of-the-how-it-works-section">
               Grow your online business now
@@ -26,8 +28,7 @@ const HowItWorks = () => {
             <p className="paragraph-of-the-how-it-works-section">
               Access advanced order types including limit, market, stop limit
               and dollar cost averaging. Track your total asset holdings, values
-              and equity over time. Monitor markets, manage your portfolio, and
-              trade crypto on the go.
+              and equity over time.
             </p>
             {/* the box below used to make two buttons in row with flex */}
             <div className="box-for-buttons-how-it-works">
@@ -46,8 +47,9 @@ const HowItWorks = () => {
               </div>
             </div>
           </div>
-          <div className="card-descriptions-box-in-how-it-works">
-            <div className="managment-card-content">
+
+          <div className="managment-card-content">
+            <div className="card-descriptions-box-in-how-it-works">
               <img
                 className="image-payment-how-it-works"
                 src={FirstIconBox}
@@ -72,13 +74,11 @@ const HowItWorks = () => {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="card-descriptions-box-in-how-it-works">
-            <div className="managment-card-content">
+            <div className="card-descriptions-box-in-how-it-works background-color">
               <img
                 className="image-payment-how-it-works"
-                src={FirstIconBox}
+                src={SecondIconBox}
                 alt="icon"
               />
               <div class="three-contents-flex">
@@ -104,7 +104,92 @@ const HowItWorks = () => {
         </div>
         {/* THE CONTENT OF THE SECTION ENDS HERE */}
         {/* SUB CONTENT BOX STARTS HERE */}
-        <div className="sub-content-how-it-works-section"></div>
+        <div className="sub-content-how-it-works-section">
+          {/* FIRST BOX */}
+          <div className="sub-content-boxes">
+            <div className="image-box-sub-content">
+              <img
+                className="image-content-sub-content"
+                src={subContentImage}
+                alt="sub content"
+              />
+            </div>
+            <div className="description-and-icon-sub-content">
+              <p className="description-content-sub-content">Certification</p>
+              <FaArrowRight className="icon-sub-content" />
+            </div>
+          </div>
+
+          <div className="sub-content-boxes">
+            <div className="image-box-sub-content">
+              <img
+                className="image-content-sub-content"
+                src={subContentImage}
+                alt="sub content"
+              />
+            </div>
+            <div className="description-and-icon-sub-content">
+              <p className="description-content-sub-content">Certification</p>
+              <FaArrowRight className="icon-sub-content" />
+            </div>
+          </div>
+
+          <div className="sub-content-boxes">
+            <div className="image-box-sub-content">
+              <img
+                className="image-content-sub-content"
+                src={subContentImage}
+                alt="sub content"
+              />
+            </div>
+            <div className="description-and-icon-sub-content">
+              <p className="description-content-sub-content">Certification</p>
+              <FaArrowRight className="icon-sub-content" />
+            </div>
+          </div>
+          {/* SECOND BOX */}
+          <div className="sub-content-boxes">
+            <div className="image-box-sub-content">
+              <img
+                className="image-content-sub-content"
+                src={subContentImage}
+                alt="sub content"
+              />
+            </div>
+            <div className="description-and-icon-sub-content">
+              <p className="description-content-sub-content">Certification</p>
+              <FaArrowRight className="icon-sub-content" />
+            </div>
+          </div>
+          {/* THIRD BOX */}
+          <div className="sub-content-boxes">
+            <div className="image-box-sub-content">
+              <img
+                className="image-content-sub-content"
+                src={subContentImage}
+                alt="sub content"
+              />
+            </div>
+            <div className="description-and-icon-sub-content">
+              <p className="description-content-sub-content">Certification</p>
+              <FaArrowRight className="icon-sub-content" />
+            </div>
+          </div>
+          {/* FOURTH BOX */}
+          <div className="sub-content-boxes">
+            <div className="image-box-sub-content">
+              <img
+                className="image-content-sub-content"
+                src={subContentImage}
+                alt="sub content"
+              />
+            </div>
+            <div className="description-and-icon-sub-content">
+              <p className="description-content-sub-content">Certification</p>
+              <FaArrowRight className="icon-sub-content" />
+            </div>
+          </div>
+        </div>
         {/* SUB CONTENT BOX ENDS HERE */}
       </div>
     </div>

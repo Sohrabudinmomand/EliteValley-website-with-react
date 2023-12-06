@@ -7,9 +7,10 @@
 }
 
 /* STYLING THE CONTAINER DIV */
-.container {
+.container-hero-section {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 50px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,7 +20,7 @@
 /* STYLING THE CONTENT BOX IN CONTAINER */
 .container-content {
     width: 80%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,7 +30,7 @@
 /* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
 .description-box {
     width: 50%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,11 +41,11 @@
 /* TITLE OF THE SECTION */
 .title-of-the-section {
     color: var(--mainColor);
-    font-size: 46px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 50px;
-    margin-bottom: 20px;
+    line-height: 56px;
+    margin-bottom: 18px;
 }
 
 /* PARAGRAPH OF THE SECTION BELOW THE TITLE */
@@ -121,12 +122,12 @@
 /* STYLING THE IMAGE BOX THAT CONTAINS THE IMAGE OF THE SECTION  */
 .image-box {
     width: 50%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 7px;
+    padding-bottom: 105px;
 }
 
 /* THE IMAGE OF THE SECTION */
@@ -138,7 +139,7 @@
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
     .container-content {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -151,6 +152,8 @@
 
 /* Responsived in max width 1400px */
 @media (max-width: 1400px) {
+
+
     .container-content {
         width: 80%;
     }
@@ -158,6 +161,8 @@
 
 /* Responsived in max width 1200px */
 @media (max-width: 1200px) {
+
+
     .container-content {
         width: 90%;
     }
@@ -187,33 +192,42 @@
     .Get-in-touch {
         font-size: 14px;
         padding: 15px 20px;
+    }
 
+    /* STYLING THE IMAGE BOX THAT CONTAINS THE IMAGE OF THE SECTION  */
+    .image-box {
+        justify-content: center;
+    }
+
+
+    /* THE IMAGE OF THE SECTION */
+    .image-of-the-hero-section {
+        width: 300px;
+        height: 370px;
     }
 }
 
 /* Responsived in max width 768px */
 @media (max-width: 768px) {
 
+    /* STYLING THE CONTAINER DIV */
+    .container-hero-section {
+        width: 100%;
+        padding: 15px 0px;
+
+    }
+
+
     /* STYLING THE CONTENT BOX IN CONTAINER */
     .container-content {
         width: 80%;
-        height: 100vh;
         flex-direction: column;
-
-        /* 
-        width: 80%;
-        height: 100vh;
-        display: flex;
-        flex-direction: row; */
-        justify-content: space-between;
-        /* align-items: center; */
+        justify-content: center;
     }
-
 
     /* STYLING THE IMAGE BOX THAT CONTAINS THE IMAGE OF THE SECTION  */
     .image-box {
         width: 100%;
-        height: 50vh;
         justify-content: center;
     }
 
@@ -227,7 +241,6 @@
     /* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
     .description-box {
         width: 100%;
-        height: 50vh;
         order: 1;
     }
 }

@@ -11,14 +11,14 @@ import "./hero-section.css";
 const HeroSection = () => {
   return (
     // the container starts here
-    <div className="container">
+    <div className="container-hero-section">
       {/* using the contianer below to make the page two parts with flex box */}
       <div className="container-content">
         {/* the box below is for descriptions like title, paragraph and button*/}
         <div className="description-box">
-          <h1 className="title-of-the-section">
+          <p className="title-of-the-section">
             Empowering Businesses Through Innovative Software Solutions
-          </h1>
+          </p>
           <p className="paragraph-of-the-section">
             Are you looking for a top-notch mobile app or a powerful web
             application? Look no further! At Elite Valley, we specialize in
