@@ -139,7 +139,7 @@
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
     .container-content {
-        width: 70%;
+        width: 50%;
     }
 }
 

@@ -10,26 +10,26 @@
 /* STYLING THE CONTAINER */
 .container-how-it-works-section {
     width: 100%;
-    height: 110vh;
+    height: auto;
+    padding: 50px 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .content-managment-box {
     width: 80%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
 }
 
 .content-how-it-works-section {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,8 +38,8 @@
 
 /* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
 .description-box-how-it-works {
-    width: 35%;
-    height: 80vh;
+    width: 30%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,10 +70,10 @@
 /* TITLE OF THE SECTION */
 .title-of-the-how-it-works-section {
     color: var(--mainColor);
-    font-size: 30px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    /* line-height: 50px; */
+    line-height: 56px;
     margin-bottom: 20px;
 }
 
@@ -87,7 +87,7 @@
 
 /* STYLING THE DIV FOR TWO BUTTONS IN THE SECTION  */
 .box-for-buttons-how-it-works {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -148,38 +148,33 @@
 }
 
 .managment-card-content {
-    width: 100%;
-    height: 70vh;
+    width: 65%;
+    height: 90vh;
     display: flex;
     flex-direction: row;
-    /* gap: 40px; */
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 
 .card-descriptions-box-in-how-it-works {
-    width: 40%;
-    height: 70vh;
+    width: 50%;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     border: 1px solid #ffe7bb;
     border-radius: 8px;
-    gap: 40px;
-    padding: 0px 10px;
-    transition: all .3s;
-    border: #FF5722 2px solid;
-    /* Move the transition property here */
+    gap: 50px;
+    padding: 0px 20px;
+    transition: all 0.3s;
 }
 
 .card-descriptions-box-in-how-it-works:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     border: 1px solid var(--text-color);
-    /* transition: all .25s; */
-    /* Add the property you want to transition on hover */
 }
 
 
@@ -189,11 +184,11 @@
 
 
 .three-contents-flex {
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 20px;
 }
 
 
@@ -201,8 +196,8 @@
 
 
 .image-payment-how-it-works {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     flex-shrink: 0;
     border-radius: 16px;
     background: #FFF;
@@ -233,13 +228,12 @@
     height: 20vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
 
 .sub-content-boxes {
-    width: 160px;
+    width: 150px;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -248,7 +242,14 @@
     border-radius: 16px;
     padding-left: 10px;
     border: 1px solid var(--devider-color);
+    transition: 0.4s;
 }
+
+
+.sub-content-boxes:hover {
+    border: 1.5px solid rgb(6, 176, 214);
+}
+
 
 .image-box-sub-content {
     width: 46px;
@@ -263,14 +264,13 @@
 }
 
 .description-and-icon-sub-content {
-    width: 150px;
+    width: 100px;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
-
+    gap: 10px;
 }
 
 .description-content-sub-content {
@@ -290,30 +290,186 @@
 
 
 /* Responsived in min width 1920px */
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
     .content-managment-box {
-        width: 60%;
+        width: 50%;
+    }
+} */
 
+/* Responsived in max width 1920px */
+@media (max-width: 1920px) {
+    .content-managment-box {
+        width: 80%;
+        height: 90vh;
+    }
+
+    .content-how-it-works-section {
+        height: 60vh;
+    }
+
+    .description-box-how-it-works {
+        height: 40vh;
+    }
+
+    .card-descriptions-box-in-how-it-works {
+        height: 65vh;
+        gap: 40px;
+    }
+
+    .sub-content-boxes {
+        width: 180px;
     }
 }
 
-/* Responsived in max width 1920px */
-@media (max-width: 1920px) {}
-
 /* Responsived in max width 1400px */
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .content-managment-box {
+        width: 80%;
+        height: 100vh;
+    }
+
+    .content-how-it-works-section {
+        height: 90vh;
+    }
+
+    .description-box-how-it-works {
+        height: 50vh;
+    }
+
+    .card-descriptions-box-in-how-it-works {
+        height: 80vh;
+        gap: 50px;
+    }
+
+    .sub-content-boxes {
+        width: 150px;
+    }
+}
 
 /* Responsived in max width 1200px */
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .content-managment-box {
+        width: 90%;
+        height: 105vh;
+    }
+}
 
 /* Responsived in max width 992px */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .content-managment-box {
+        width: 90%;
+        height: 170vh;
+    }
+
+    .content-how-it-works-section {
+        height: 130vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description-box-how-it-works {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .card-descriptions-box-in-how-it-works {
+        height: 70vh;
+        gap: 30px;
+    }
+
+    .managment-card-content {
+        width: 100%;
+        height: 90vh;
+        gap: 30px;
+    }
+
+
+    .sub-content-how-it-works-section {
+        height: 40vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        place-items: center;
+    }
+
+    .sub-content-boxes {
+        width: 200px;
+    }
+}
 
 /* Responsived in max width 768px */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .content-managment-box {
+        width: 80%;
+        height: 240vh;
+    }
+
+    .content-how-it-works-section {
+        height: 160vh;
+    }
+
+    .card-descriptions-box-in-how-it-works {
+        height: 100vh;
+        gap: 50px;
+    }
+
+    .description-box-how-it-works {
+        height: 60vh;
+    }
+
+    .sub-content-how-it-works-section {
+        height: 50vh;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+}
 
 /* Responsived in max width 567px */
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
 
-/* Responsived in max width 400px */
-@media (max-width: 400px) {}
+    .content-managment-box {
+        width: 90%;
+        height: 400vh;
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    .content-how-it-works-section {
+        height: 250vh;
+        justify-content: space-around;
+    }
+
+    .managment-card-content {
+        width: 100%;
+        height: 150vh;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-descriptions-box-in-how-it-works {
+        width: 100%;
+        height: 90vh;
+        gap: 50px;
+    }
+
+    .sub-content-how-it-works-section {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+
+    .sub-content-boxes {
+        width: 100%;
+    }
+
+    .description-and-icon-sub-content {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+
+}

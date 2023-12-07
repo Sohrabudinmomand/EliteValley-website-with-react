@@ -238,7 +238,7 @@
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
     .container-WhyWeExist-content {
-        width: 70%;
+        width: 50%;
     }
 
     .mouse-svg {
@@ -312,7 +312,7 @@
 
 @media (max-width: 992px) {
     .container-WhyWeExist-content {
-        width: 80%;
+        width: 90%;
         flex-direction: column;
     }
 
@@ -360,7 +360,7 @@
 /* Responsived in max width 768px */
 @media (max-width: 768px) {
     .container-WhyWeExist-content {
-        width: 70%;
+        width: 80%;
     }
 
     .title-of-the-WhyWeExist-section {

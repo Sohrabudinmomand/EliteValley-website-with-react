@@ -103,6 +103,7 @@ const HowItWorks = () => {
           </div>
         </div>
         {/* THE CONTENT OF THE SECTION ENDS HERE */}
+
         {/* SUB CONTENT BOX STARTS HERE */}
         <div className="sub-content-how-it-works-section">
           {/* FIRST BOX */}
