@@ -20,7 +20,7 @@
 
 .content-managment-box {
     width: 80%;
-    height: 120vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,7 +29,7 @@
 
 .content-how-it-works-section {
     width: 100%;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +39,6 @@
 /* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
 .description-box-how-it-works {
     width: 30%;
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +148,6 @@
 
 .managment-card-content {
     width: 65%;
-    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -160,12 +158,12 @@
 
 .card-descriptions-box-in-how-it-works {
     width: 50%;
-    height: 85vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid #ffe7bb;
+    border: 3px solid #ffbbbb;
     border-radius: 8px;
     gap: 50px;
     padding: 0px 20px;
@@ -297,7 +295,7 @@
 } */
 
 /* Responsived in max width 1920px */
-@media (max-width: 1920px) {
+/* @media (max-width: 1920px) {
     .content-managment-box {
         width: 80%;
         height: 90vh;
@@ -307,9 +305,7 @@
         height: 60vh;
     }
 
-    .description-box-how-it-works {
-        height: 40vh;
-    }
+
 
     .card-descriptions-box-in-how-it-works {
         height: 65vh;
@@ -319,10 +315,10 @@
     .sub-content-boxes {
         width: 180px;
     }
-}
+} */
 
 /* Responsived in max width 1400px */
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
     .content-managment-box {
         width: 80%;
         height: 100vh;
@@ -332,9 +328,7 @@
         height: 90vh;
     }
 
-    .description-box-how-it-works {
-        height: 50vh;
-    }
+
 
     .card-descriptions-box-in-how-it-works {
         height: 80vh;
@@ -344,18 +338,18 @@
     .sub-content-boxes {
         width: 150px;
     }
-}
+} */
 
 /* Responsived in max width 1200px */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .content-managment-box {
         width: 90%;
         height: 105vh;
     }
-}
+} */
 
 /* Responsived in max width 992px */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .content-managment-box {
         width: 90%;
         height: 170vh;
@@ -369,7 +363,6 @@
 
     .description-box-how-it-works {
         width: 100%;
-        height: 50vh;
     }
 
     .card-descriptions-box-in-how-it-works {
@@ -397,10 +390,10 @@
     .sub-content-boxes {
         width: 200px;
     }
-}
+} */
 
 /* Responsived in max width 768px */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .content-managment-box {
         width: 80%;
         height: 240vh;
@@ -415,19 +408,22 @@
         gap: 50px;
     }
 
-    .description-box-how-it-works {
-        height: 60vh;
-    }
 
-    .sub-content-how-it-works-section {
-        height: 50vh;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 10px;
-    }
+    /* .description-box-how-it-works {
+        gap: 10px;
+    } */
+
+
+/* .sub-content-how-it-works-section {
+    height: 50vh;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
 }
 
+/* */
 /* Responsived in max width 567px */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
 
     .content-managment-box {
         width: 90%;
@@ -472,4 +468,4 @@
 
     }
 
-}
+} */

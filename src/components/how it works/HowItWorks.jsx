@@ -15,7 +15,7 @@ const HowItWorks = () => {
     <div className="container-how-it-works-section">
       <div className="content-managment-box">
         {/* THE CONTENT OF THE SECTION STARTS HERE */}
-        <div className="content-how-it-works-section">
+        <d iv className="content-how-it-works-section">
           {/* the box below is for descriptions like title, paragraph and button*/}
           <div className="description-box-how-it-works">
             <div class="making-the-two-span-in-one-row">
@@ -101,7 +101,7 @@ const HowItWorks = () => {
               </div>
             </div>
           </div>
-        </div>
+        </d>
         {/* THE CONTENT OF THE SECTION ENDS HERE */}
 
         {/* SUB CONTENT BOX STARTS HERE */}
