@@ -81,8 +81,7 @@ const WhatOurCustomersAreSying = () => {
               </div>
               <p className="description-what-our-customers-are-sying-homepage">
                 Their blood alcohol levels rose to 0.007 to 0.02 o/oo (parts per
-                thousand), or 0.7 to 2.0 mg/L. Their blood alcohol levels rose
-                to 0.007 to 0.02 o/oo (parts per thousand), or 0.7 to 2.0 mg/L.
+                thousand), or 0.7 to 2.0 mg/L.
               </p>
               <div className="end-of-the-card">
                 <p id="date">1 aug 2023</p>
