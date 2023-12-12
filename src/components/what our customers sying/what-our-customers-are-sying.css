@@ -1,0 +1,154 @@
+/* THE ROOT CSS */
+:root {
+    --mainBackgroundColr: #ffffff;
+    --mainColor: #FF5722;
+    --text-color: #071920;
+    --hover-color: #FF5722;
+}
+
+.contianer-what-our-customers-are-sying-homepage {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content-what-our-customers-are-sying-homepage {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first-div-what-our-customers-are-sying-homepage {
+    width: 40%;
+    height: 100vh;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.user-image-what-our-customers-are-sying-homepage {
+    width: 70%;
+}
+
+
+.title-what-our-customers-are-sying-homepag {
+    color: var(--mainColor);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.paragraph-what-our-customers-are-sying-homepag {
+    color: var(--text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+
+.box-content-what-our-customers-are-sying-homepage {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-two-boxes {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+
+.right-two-boxes {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.container-content-boxes {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 8px;
+    background: #FFE7BB;
+    padding: 10px;
+}
+
+
+.making-row-the-image-and-user-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.user-image-boxes {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.user-info-name {
+    color: var(--mainColor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.user-info-job {
+    color: #3D565F;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.description-what-our-customers-are-sying-homepage {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.end-of-the-card {
+    width: 100%;
+    border-top: 1px solid #FFD166;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}

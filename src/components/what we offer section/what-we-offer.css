@@ -163,7 +163,7 @@
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
     .content-of-what-we-offer-section {
-        width: 80%;
+        width: 50%;
     }
 }
 

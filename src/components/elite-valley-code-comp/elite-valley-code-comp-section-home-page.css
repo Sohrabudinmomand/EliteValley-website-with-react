@@ -1,0 +1,451 @@
+/* THE ROOT CSS */
+:root {
+    --mainBackgroundColr: #ffffff;
+    --mainColor: #FF5722;
+    --text-color: #071920;
+    --hover-color: #FF5722;
+    --border-gray: #CDE2E7;
+    --bg-white: #ffffff;
+}
+
+.happy-clients {
+    border-radius: 10px;
+    position: absolute;
+    top: 19%;
+    left: 79%;
+    margin: 0px 0px 30px;
+    padding: 10px 20px;
+    background-color: var(--bg-white);
+    text-align: center;
+    color: var(--primary-color);
+    border: 1px solid var(--border-gray);
+    animation-delay: 1s;
+}
+
+.happy-clients-number {
+    color: var(--text-color);
+    font-size: 25px !important;
+    font-weight: 900 !important;
+}
+
+.happy-clients-text {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* the testamonial box on the image */
+.testamonial-box {
+    width: 375px;
+    position: absolute;
+    top: 64%;
+    left: 40%;
+}
+
+/* testamonial image */
+.testamonial {
+    max-width: 100%;
+}
+
+/* animating the happy clients box and testamonial box located on image */
+@keyframes happy-clients {
+    0% {
+        transform: translateY(-20px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes happy-clients-2 {
+    0% {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(-20px)
+    }
+}
+
+@keyframes testamonial-sm-animation {
+    0% {
+        transform: translateY(-20px) translateX(50px)
+    }
+
+    to {
+        transform: translateY(-20px) translateX(0)
+    }
+}
+
+@keyframes testamonial-sm-2-animation {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+.happy-clients {
+    animation: happy-clients 2s linear infinite alternate
+}
+
+.happy-clients {
+    animation: happy-clients-2 2s linear infinite alternate
+}
+
+.testamonial-box {
+    animation: testamonial-sm-animation 3s linear infinite alternate
+}
+
+.testamonial-box {
+    animation: testamonial-sm-2-animation 3s linear infinite alternate
+}
+
+
+
+
+
+
+/* STYLING THE CONTAINER DIV */
+.container-elite-valley-code-comp-section-home-page {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLING THE CONTENT BOX IN CONTAINER */
+.container-content-elite-valley-code-comp-section-home-page {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
+.description-box-elite-valley-code-comp-section-home-page {
+    width: 47%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 53px;
+    gap: 10px;
+}
+
+
+
+
+
+
+/* bringing two span elements in one row */
+.making-the-two-span-in-one-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* a line befor why we exist text */
+.span-line {
+    padding: 0 10px 10px 0;
+    color: var(--text-color);
+}
+
+.what-we-offer {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TITLE OF THE SECTION */
+.title-of-the-section-elite-valley-code-comp-section-home-page {
+    color: var(--mainColor);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+/* PARAGRAPH OF THE SECTION BELOW THE TITLE */
+.paragraph-of-elite-valley-code-comp-section-home-page {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+
+
+.unordered-list-of-hero-section {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    border: 5px solid transparent;
+}
+
+.unordered-list-of-hero-section .list-of-items-hero-section {
+    color: #3d565f;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 18px;
+    width: 50%;
+}
+
+.unordered-list-of-hero-section .list-of-items-hero-section .bx-check {
+    font-size: 13px;
+    margin: 0px 5px 0px 0px;
+    vertical-align: middle;
+    color: #3d565f;
+}
+
+
+
+
+
+
+/* STYLING THE DIV FOR TWO BUTTONS IN THE SECTION  */
+.box-for-buttons-elite-valley-code-comp-section-home-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GET IN TOUCH BUTTONS */
+.Get-in-touch-elite-valley-code-comp-section-home-page {
+    color: #ffe7bb;
+    font-size: 14px;
+    background-color: var(--mainColor);
+    padding: 15px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+/* HOVER EFFECT FOR GET IN TOUCH BUTTON */
+.Get-in-touch-elite-valley-code-comp-section-home-page:hover {
+    transform: translateY(-2px);
+    background-color: #ff8a66;
+}
+
+/* STYLING THE BUTTON THAT CONTAINS ONE BUTTON AND ON ICON */
+.making-elements-flex-elite-valley-code-comp-section-home-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+/* LERAN MORE BUTTON */
+.learn-more {
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 18px 10px 18px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.45px;
+    transition: 0.2s;
+}
+
+/* RIGHT ARROW BESIDES THE ICON */
+.right-arrow {
+    font-size: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* HOVER EFFECT FOR BUTTON LEARN MORE AND RIGHT ARROW ICON */
+.making-elements-flex-elite-valley-code-comp-section-home-page:hover,
+.learn-more:hover {
+    color: var(--hover-color);
+}
+
+/* STYLING THE IMAGE BOX THAT CONTAINS THE IMAGE OF THE SECTION  */
+.image-box-elite-valley-code-comp-section-home-page {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* THE IMAGE OF THE SECTION */
+.image-of-the-hero-section-elite-valley-code-comp-section-home-page {
+    width: 80%;
+}
+
+/* Responsived in min width 1920px */
+@media (min-width: 1920px) {
+    .container-content-elite-valley-code-comp-section-home-page {
+        width: 50%;
+    }
+}
+
+/* Responsived in max width 1920px */
+@media (max-width: 1920px) {
+    .container-content-elite-valley-code-comp-section-home-page {
+        width: 60%;
+    }
+
+    .happy-clients {
+        top: 10%;
+        left: 87%;
+    }
+
+}
+
+/* Responsived in max width 1400px */
+@media (max-width: 1400px) {
+
+
+    .container-content-elite-valley-code-comp-section-home-page {
+        width: 80%;
+    }
+
+    .testamonial-box {
+        left: 43%;
+    }
+}
+
+/* Responsived in max width 1200px */
+@media (max-width: 1200px) {
+
+
+    .container-content-elite-valley-code-comp-section-home-page {
+        width: 90%;
+    }
+}
+
+/* Responsived in max width 992px */
+@media (max-width: 992px) {
+
+    /* STYLING THE CONTENT BOX IN CONTAINER */
+    .container-content-elite-valley-code-comp-section-home-page {
+        width: 70%;
+        flex-direction: column;
+    }
+
+
+    .image-box-elite-valley-code-comp-section-home-page {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .description-box-elite-valley-code-comp-section-home-page {
+        width: 100%;
+    }
+
+    .title-of-the-section-elite-valley-code-comp-section-home-page {
+        font-size: 36px;
+    }
+
+
+    .happy-clients {
+        top: 51%;
+        left: 60%;
+    }
+
+
+    .testamonial-box {
+        top: 80%;
+        left: 7%;
+    }
+
+
+
+
+
+}
+
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+
+    /* STYLING THE CONTENT BOX IN CONTAINER */
+    .container-content-elite-valley-code-comp-section-home-page {
+        width: 80%;
+    }
+}
+
+/* Responsived in max width 567px */
+@media (max-width: 576px) {
+
+    /* STYLING THE CONTENT BOX IN CONTAINER */
+    .container-content-elite-valley-code-comp-section-home-page {
+        width: 90%;
+    }
+
+    .happy-clients {
+        padding: 5px 10px;
+        top: 65%;
+        left: 55%;
+    }
+
+    .testamonial-box {
+        width: 250px;
+        top: 90%;
+        left: 10%;
+    }
+
+    .unordered-list-of-hero-section {
+        flex-direction: column;
+    }
+
+    .unordered-list-of-hero-section .list-of-items-hero-section {
+        width: 100%;
+    }
+
+    .image-of-the-hero-section-elite-valley-code-comp-section-home-page {
+        width: 330px;
+        height: 370px;
+    }
+}
+
+/* Responsived in max width 400px */
+@media (max-width: 400px) {
+
+    .happy-clients {
+        top: 70%;
+        left: 50%;
+    }
+
+
+    .testamonial-box {
+        /* top: 90%; */
+        left: 0%;
+    }
+
+
+
+
+}
