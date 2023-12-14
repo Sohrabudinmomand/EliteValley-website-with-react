@@ -15,7 +15,7 @@ const HowItWorks = () => {
     <div className="container-how-it-works-section">
       <div className="content-managment-box">
         {/* THE CONTENT OF THE SECTION STARTS HERE */}
-        <d iv className="content-how-it-works-section">
+        <div className="content-how-it-works-section">
           {/* the box below is for descriptions like title, paragraph and button*/}
           <div className="description-box-how-it-works">
             <div class="making-the-two-span-in-one-row">
@@ -50,11 +50,13 @@ const HowItWorks = () => {
 
           <div className="managment-card-content">
             <div className="card-descriptions-box-in-how-it-works">
-              <img
-                className="image-payment-how-it-works"
-                src={FirstIconBox}
-                alt="icon"
-              />
+              <div className="control-the-image">
+                <img
+                  className="image-payment-how-it-works"
+                  src={FirstIconBox}
+                  alt="icon"
+                />
+              </div>
               <div class="three-contents-flex">
                 <h5 class="title-cards-how-it-works">Payment</h5>
                 <p class="paragraph-cards-how-it-works">
@@ -66,7 +68,7 @@ const HowItWorks = () => {
                 {/* using the box below to use flex box for the button and the icon */}
                 <div className="making-elements-flex-how-it-works">
                   {/* LEARN MORE BUTTON */}
-                  <a href="#" className="learn-more-how-it-works">
+                  <a href="#" className="learn-more-how-it-works inside-card">
                     Learn More
                   </a>
                   {/* Right Arrow icon */}
@@ -76,11 +78,13 @@ const HowItWorks = () => {
             </div>
 
             <div className="card-descriptions-box-in-how-it-works background-color">
-              <img
-                className="image-payment-how-it-works"
-                src={SecondIconBox}
-                alt="icon"
-              />
+              <div className="control-the-image">
+                <img
+                  className="image-payment-how-it-works"
+                  src={FirstIconBox}
+                  alt="icon"
+                />
+              </div>
               <div class="three-contents-flex">
                 <h5 class="title-cards-how-it-works">Payment</h5>
                 <p class="paragraph-cards-how-it-works">
@@ -92,7 +96,7 @@ const HowItWorks = () => {
                 {/* using the box below to use flex box for the button and the icon */}
                 <div className="making-elements-flex-how-it-works">
                   {/* LEARN MORE BUTTON */}
-                  <a href="#" className="learn-more-how-it-works">
+                  <a href="#" className="learn-more-how-it-works inside-card">
                     Learn More
                   </a>
                   {/* Right Arrow icon */}
@@ -101,7 +105,7 @@ const HowItWorks = () => {
               </div>
             </div>
           </div>
-        </d>
+        </div>
         {/* THE CONTENT OF THE SECTION ENDS HERE */}
 
         {/* SUB CONTENT BOX STARTS HERE */}

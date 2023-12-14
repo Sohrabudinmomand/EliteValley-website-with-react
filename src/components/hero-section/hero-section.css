@@ -145,6 +145,10 @@
 
 /* Responsived in max width 1920px */
 @media (max-width: 1920px) {
+    .container-hero-section {
+        padding: 110px 0px;
+    }
+
     .container-content {
         width: 70%;
     }
