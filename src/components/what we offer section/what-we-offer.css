@@ -12,7 +12,7 @@
 .container-what-we-offer {
     width: 100%;
     height: auto;
-    padding: 60px;
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
 
 .content-of-what-we-offer-section {
     width: 80%;
-    height: 110vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +90,7 @@
 
 .expand-panels-box {
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,7 +100,7 @@
 
 .image-box-what-we-offer-section {
     width: 20%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -114,24 +114,14 @@
 
 .panel-box-what-we-offer-section {
     width: 80%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
-/* .expandable-box-1 {
-    width: 50px;
-    height: 300px;
-    transition: width 0.3s;
-    background-color: red;
-}
-
-.expandable-box-1.expandPanel {
-    width: 300px;
-} */
 
 
 .child-div {
@@ -142,7 +132,7 @@
     align-items: flex-start;
     background-color: var(--expandabble-box);
     border-radius: 23px;
-    border-top: 5px solid var(--mainColor);
+    border-top: 3px solid var(--mainColor);
     padding: 20px;
 }
 
@@ -151,7 +141,7 @@
 }
 
 .child-div {
-    transition: width 0.3s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
 
@@ -162,27 +152,69 @@
 
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
+
     .content-of-what-we-offer-section {
         width: 50%;
     }
 }
 
-/* Responsived in max width 1920px */
-@media (max-width: 1920px) {
 
+@media (max-width: 1920px) {
     .content-of-what-we-offer-section {
-        width: 80%;
+        width: 50%;
     }
 }
 
+@media (max-width: 1600px) {
+    .content-of-what-we-offer-section {
+        width: 60%;
+    }
+}
+
+
+
+
+
 /* Responsived in max width 1400px */
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .content-of-what-we-offer-section {
+        width: 70%;
+    }
+}
 
 /* Responsived in max width 1200px */
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .content-of-what-we-offer-section {
+        width: 80%;
+    }
+
+    .image-box-what-we-offer-section {
+        display: none;
+    }
+}
 
 /* Responsived in max width 992px */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .content-of-what-we-offer-section {
+        width: 80%;
+    }
+
+    .description-box-what-we-offer-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .box-content-1 {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .box-content-2 {
+        width: 100%;
+        height: 10vh;
+        padding-bottom: 50px;
+    }
+}
 
 /* Responsived in max width 768px */
 @media (max-width: 768px) {}

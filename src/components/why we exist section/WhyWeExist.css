@@ -333,7 +333,6 @@
     .description-box-WhyWeExist {
         gap: 0px;
         padding: 20px 0px;
-        border: 2px solid green;
     }
 
     .image-box-WhyWeExist {
@@ -343,7 +342,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: end;
-        border: 2px solid red;
     }
 }
 
@@ -379,7 +377,7 @@
     }
 
     .mouse-svg {
-        top: 47%;
+        top: 43%;
         left: 44%;
     }
 
@@ -441,9 +439,6 @@
         height: 270px;
     }
 
-    .image-box-WhyWeExist {
-        height: 50vh;
-    }
 
     .mouse-svg {
         top: 35%;

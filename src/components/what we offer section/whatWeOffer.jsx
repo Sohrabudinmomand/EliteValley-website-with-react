@@ -49,6 +49,7 @@ const WhatWeOffer = () => {
             </p>
           </div>
         </div>
+
         <div className="expand-panels-box">
           <div className="image-box-what-we-offer-section">
             <img
@@ -68,7 +69,9 @@ const WhatWeOffer = () => {
                 Hosting
               </h2>
 
-              <p style={getPStyle(1)}>Content 1</p>
+              <p style={getPStyle(1)}>
+                Blocks infected website tracking programs and annoying link
+              </p>
             </div>
             <div
               className="child-div"
@@ -79,7 +82,9 @@ const WhatWeOffer = () => {
               <h2 className="additional-h2" style={getAdditionalH2Style(2)}>
                 Web App Dev
               </h2>
-              <p style={getPStyle(2)}>Content 2</p>
+              <p style={getPStyle(2)}>
+                Blocks infected website tracking programs and annoying.
+              </p>
             </div>
             <div
               className="child-div"
@@ -90,7 +95,9 @@ const WhatWeOffer = () => {
               <h2 className="additional-h2" style={getAdditionalH2Style(3)}>
                 Graphic Design
               </h2>
-              <p style={getPStyle(3)}>Content 3</p>
+              <p style={getPStyle(3)}>
+                Blocks infected website tracking programs and annoying.
+              </p>
             </div>
             <div
               className="child-div"
@@ -101,7 +108,9 @@ const WhatWeOffer = () => {
               <h2 className="additional-h2" style={getAdditionalH2Style(4)}>
                 Title 4
               </h2>
-              <p style={getPStyle(4)}>Content 4</p>
+              <p style={getPStyle(4)}>
+                Blocks infected website tracking programs and annoying.
+              </p>
             </div>
           </div>
         </div>
