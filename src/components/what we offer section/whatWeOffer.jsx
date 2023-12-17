@@ -4,7 +4,7 @@ import WhatWeOfferImage from "../../assets/what-we-offer-section.png";
 
 const WhatWeOffer = () => {
   const [containerWidth, setContainerWidth] = useState(window.innerWidth);
-  const [expandedDiv, setExpandedDiv] = useState(null);
+  const [expandedDiv, setExpandedDiv] = useState(1);
 
   const handleDivClick = (divNumber) => {
     if (containerWidth > 768) {
@@ -17,25 +17,35 @@ const WhatWeOffer = () => {
   };
 
   const getPStyle = (divNumber) => {
-    return expandedDiv === divNumber
-      ? { display: "block" }
-      : { display: "none" };
+    return containerWidth > 768
+      ? expandedDiv === divNumber
+        ? { display: "block" }
+        : { display: "none" }
+      : {};
   };
 
   const getDivWidth = (divNumber) => {
     if (containerWidth > 1920) {
       return expandedDiv === divNumber ? "500px" : "100px";
     } else if (containerWidth <= 1920 && containerWidth > 768) {
-      return expandedDiv === divNumber ? "300px" : "100px";
-    } else {
+      return expandedDiv === divNumber ? "300px" : "80px";
+    } else if (containerWidth < 576) {
       return "300px";
+    } else if (containerWidth < 300) {
+      return "250px";
+    } else {
+      return "450px";
     }
   };
 
   const getAdditionalH2Style = (divNumber) => {
-    return expandedDiv === divNumber
-      ? { writingMode: "horizontal-tb" }
-      : { writingMode: "vertical-rl" };
+    if (containerWidth <= 768) {
+      return { writingMode: "horizontal-tb" };
+    } else {
+      return expandedDiv === divNumber
+        ? { writingMode: "horizontal-tb" }
+        : { writingMode: "vertical-rl" };
+    }
   };
 
   const handleResize = () => {
