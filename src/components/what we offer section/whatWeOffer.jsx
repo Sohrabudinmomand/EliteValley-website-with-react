@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./what-we-offer.css";
 import WhatWeOfferImage from "../../assets/what-we-offer-section.png";
 
 const WhatWeOffer = () => {
-  const [expandedDiv, setExpandedDiv] = useState(1);
+  const [containerWidth, setContainerWidth] = useState(window.innerWidth);
+  const [expandedDiv, setExpandedDiv] = useState(null);
 
   const handleDivClick = (divNumber) => {
-    setExpandedDiv(divNumber);
-  };
-
-  const getDivWidth = (divNumber) => {
-    return expandedDiv === divNumber ? "300px" : "80px";
+    if (containerWidth > 768) {
+      if (containerWidth > 1920) {
+        setExpandedDiv(divNumber === expandedDiv ? null : divNumber);
+      } else {
+        setExpandedDiv(divNumber);
+      }
+    }
   };
 
   const getPStyle = (divNumber) => {
@@ -19,18 +22,37 @@ const WhatWeOffer = () => {
       : { display: "none" };
   };
 
-  const getAdditionalH2Style = (divNumber) => {
-    return expandedDiv === divNumber
-      ? {
-          writingMode: "horizontal-tb",
-        }
-      : {
-          writingMode: "vertical-rl",
-        };
+  const getDivWidth = (divNumber) => {
+    if (containerWidth > 1920) {
+      return expandedDiv === divNumber ? "500px" : "100px";
+    } else if (containerWidth <= 1920 && containerWidth > 768) {
+      return expandedDiv === divNumber ? "300px" : "100px";
+    } else {
+      return "300px";
+    }
   };
 
+  const getAdditionalH2Style = (divNumber) => {
+    return expandedDiv === divNumber
+      ? { writingMode: "horizontal-tb" }
+      : { writingMode: "vertical-rl" };
+  };
+
+  const handleResize = () => {
+    setContainerWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
+    // container starts here
     <div className="container-what-we-offer">
+      {/* this is the contianer for the contents of this section starts here */}
       <div className="content-of-what-we-offer-section">
         <div className="description-box-what-we-offer-section">
           <div className="box-content-1">
@@ -115,7 +137,9 @@ const WhatWeOffer = () => {
           </div>
         </div>
       </div>
+      {/* this is the contianer for the contents of this section ends here */}
     </div>
+    // container ends here
   );
 };
 
