@@ -7,13 +7,74 @@ import FristImage from "./assets/1-image-for-slider.png";
 import LogoInfirstSlider from "./assets/logo-in-first-slider.png";
 
 const SliderHomepage = () => {
+  const sliderContent = [
+    {
+      mainImage: FristImage,
+      logoImage: LogoInfirstSlider,
+      title: "App Design",
+      description: ` Discover powerful features to boost your productivity. You are
+      always welcome to visit our little den. Professional in their
+      link.`,
+      clientTitle: "Client Name",
+      clientName: "Khalid atayee",
+      clientBudgetText: "budget",
+      clientBudget: "$500-100k",
+    },
+    {
+      mainImage: FristImage,
+      logoImage: LogoInfirstSlider,
+      title: "App Design",
+      description: ` Discover powerful features to boost your productivity. You are
+      always welcome to visit our little den. Professional in their
+      link.`,
+      clientTitle: "Client Name",
+      clientName: "Khalid atayee",
+      clientBudgetText: "budget",
+      clientBudget: "$500-100k",
+    },
+    {
+      mainImage: FristImage,
+      logoImage: LogoInfirstSlider,
+      title: "App Design",
+      description: ` Discover powerful features to boost your productivity. You are
+      always welcome to visit our little den. Professional in their
+      link.`,
+      clientTitle: "Client Name",
+      clientName: "Khalid atayee",
+      clientBudgetText: "budget",
+      clientBudget: "$500-100k",
+    },
+  ];
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2.5,
     slidesToScroll: 1,
     initialSlide: 0,
+    appendDots: (dots) => (
+      <div>
+        <ul style={{ margin: "0px" }}>
+          {dots.map((dot, index) => (
+            <li
+              key={index}
+              style={{ display: "inline-block", margin: "0 5px" }}
+            >
+              {dot.props.className === "slick-active" ? (
+                <div
+                  style={{ width: "30px", height: "5px", background: "black" }}
+                ></div>
+              ) : (
+                <div
+                  style={{ width: "100px", height: "5px", background: "gray" }}
+                ></div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ),
     // Add any additional settings here
   };
 
@@ -25,40 +86,56 @@ const SliderHomepage = () => {
             Check out some of our recent work.
           </h1>
         </div>
+
         <div className="sliding-boxes-slider-home-page">
-          <Slider {...settings} className="custom-slider">
-            <div className="first-slider-box">
-              <img
-                className="image-content-for-slider"
-                src={FristImage}
-                alt="First for Slider"
-              />
-              <div className="content-slider">
-                <img
-                  className="logo-slider"
-                  src={LogoInfirstSlider}
-                  alt="Logo"
-                />
-                <h1 className="title-slider">App Design</h1>
-                <p className="paragraph-slider">
-                  Discover powerful features to boost your productivity. You are
-                  always welcome to visit our little den. Professional in their
-                  link.
-                </p>
-                <div className="sub-content-slider-box">
-                  <div className="customer-info-box">
-                    <div>
-                      <div className="client-title">Client Name</div>
-                      <div className="client-paragraph">Khalid Atayee</div>
-                    </div>
-                    <div>
-                      <div className="client-title">Budget</div>
-                      <div className="client-paragraph">$500-100k</div>
+          <Slider {...settings}>
+            {sliderContent.map((item, index) => (
+              <React.Fragment key={index}>
+                <div className="flex-container">
+                  <div
+                    key={index}
+                    className="first-slider-box"
+                    id="demo-slider"
+                  >
+                    <img
+                      className="image-content-for-slider"
+                      src={item.mainImage}
+                      alt="First for Slider"
+                    />
+                    <div className="content-slider">
+                      <img
+                        className="logo-slider"
+                        src={item.logoImage}
+                        alt="Logo"
+                      />
+                      <h1 className="title-slider">{item.title}</h1>
+                      <p className="paragraph-slider">{item.description}</p>
+                      <div className="sub-content-slider-box">
+                        <div className="customer-info-box">
+                          <div>
+                            <div className="client-title-name">
+                              {item.clientTitle}
+                            </div>
+                            <div className="client-paragraph">
+                              {item.clientName}
+                            </div>
+                          </div>
+                          <div>
+                            <div className="client-budget-text">
+                              {item.clientBudgetText}
+                            </div>
+                            <div className="client-budget">
+                              {item.clientBudget}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <div className="space-div"></div>
                 </div>
-              </div>
-            </div>
+              </React.Fragment>
+            ))}
           </Slider>
         </div>
       </div>

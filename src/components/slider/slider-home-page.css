@@ -1,7 +1,6 @@
 /* THE ROOT CSS */
 :root {
     --mainBackgroundColr: #F1F3FD;
-    ;
     --mainColor: #FF5722;
     --text-color: #071920;
     --hover-color: #FF5722;
@@ -10,9 +9,6 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     width: 100%;
 }
 
@@ -25,7 +21,6 @@
     justify-content: center;
     align-items: center;
     background-color: var(--mainBackgroundColr);
-    overflow: hidden !important;
 }
 
 .content-slider-section-home-page {
@@ -38,12 +33,13 @@
 }
 
 
-.discription-box-slider-home-page {
+.description-box-slider-home-page {
     width: 100%;
     height: 20%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border: 2px solid red;
 }
 
 
@@ -56,22 +52,26 @@
     line-height: 56px;
 }
 
-.custom-slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.sliding-boxes-slider-home-page .slick-slide {
+    /* width: 100% !important; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    flex: 0 0 auto !important;
 }
 
 .sliding-boxes-slider-home-page {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid red;
 
 }
+
+
 
 .first-slider-box {
     width: 800px !important;
@@ -80,10 +80,12 @@
     border-radius: 54px;
     background: #FFF;
     box-shadow: 1px 1px 45px 5px rgba(0, 0, 0, 0.12);
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
+    border: 2px solid green;
 }
 
 .image-content-for-slider {
@@ -108,7 +110,7 @@
 }
 
 .logo-slider {
-    width: 400px;
+    width: 100px;
     height: 50px;
 }
 
@@ -144,8 +146,7 @@
     align-items: center;
 }
 
-
-.client-title {
+.client-title-name {
     color: var(--client-title-color);
     font-size: 16px;
     font-style: normal;
@@ -153,9 +154,31 @@
     line-height: 24px;
 }
 
-.client-paragraph {
+.client-budget-text {
+    color: var(--client-title-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.client-budget {
     color: var(--text-color);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+}
+
+.space-div {
+    /* position: relative; */
+    width: 400px !important;
+    height: 440px;
+    border: #FF5722 solid 3px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
