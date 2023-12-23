@@ -3,141 +3,212 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider-home-page.css";
-import FristImage from "./assets/1-image-for-slider.png";
-import LogoInfirstSlider from "./assets/logo-in-first-slider.png";
+import imageSection from "./assets/1-image-for-slider.png";
+import logoImage from "./assets/logo-in-first-slider.png";
 
 const SliderHomepage = () => {
-  const sliderContent = [
-    {
-      mainImage: FristImage,
-      logoImage: LogoInfirstSlider,
-      title: "App Design",
-      description: ` Discover powerful features to boost your productivity. You are
-      always welcome to visit our little den. Professional in their
-      link.`,
-      clientTitle: "Client Name",
-      clientName: "Khalid atayee",
-      clientBudgetText: "budget",
-      clientBudget: "$500-100k",
-    },
-    {
-      mainImage: FristImage,
-      logoImage: LogoInfirstSlider,
-      title: "App Design",
-      description: ` Discover powerful features to boost your productivity. You are
-      always welcome to visit our little den. Professional in their
-      link.`,
-      clientTitle: "Client Name",
-      clientName: "Khalid atayee",
-      clientBudgetText: "budget",
-      clientBudget: "$500-100k",
-    },
-    {
-      mainImage: FristImage,
-      logoImage: LogoInfirstSlider,
-      title: "App Design",
-      description: ` Discover powerful features to boost your productivity. You are
-      always welcome to visit our little den. Professional in their
-      link.`,
-      clientTitle: "Client Name",
-      clientName: "Khalid atayee",
-      clientBudgetText: "budget",
-      clientBudget: "$500-100k",
-    },
-  ];
-
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.5,
+    slidesToShow: 1.55, // Changed to an integer value
     slidesToScroll: 1,
     initialSlide: 0,
-    appendDots: (dots) => (
-      <div>
-        <ul style={{ margin: "0px" }}>
-          {dots.map((dot, index) => (
-            <li
-              key={index}
-              style={{ display: "inline-block", margin: "0 5px" }}
-            >
-              {dot.props.className === "slick-active" ? (
-                <div
-                  style={{ width: "30px", height: "5px", background: "black" }}
-                ></div>
-              ) : (
-                <div
-                  style={{ width: "100px", height: "5px", background: "gray" }}
-                ></div>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    ),
-    // Add any additional settings here
+    arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1,
+        settings: {
+          slidesToShow: 1.55,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 2.55, // Changed to an integer value
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.55,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1.55,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="container-slider-section-home-page">
-      <div className="content-slider-section-home-page">
-        <div className="description-box-slider-home-page">
-          <h1 className="title-slider-box-home-page">
-            Check out some of our recent work.
-          </h1>
-        </div>
-
-        <div className="sliding-boxes-slider-home-page">
-          <Slider {...settings}>
-            {sliderContent.map((item, index) => (
-              <React.Fragment key={index}>
-                <div className="flex-container">
-                  <div
-                    key={index}
-                    className="first-slider-box"
-                    id="demo-slider"
-                  >
-                    <img
-                      className="image-content-for-slider"
-                      src={item.mainImage}
-                      alt="First for Slider"
-                    />
-                    <div className="content-slider">
-                      <img
-                        className="logo-slider"
-                        src={item.logoImage}
-                        alt="Logo"
-                      />
-                      <h1 className="title-slider">{item.title}</h1>
-                      <p className="paragraph-slider">{item.description}</p>
-                      <div className="sub-content-slider-box">
-                        <div className="customer-info-box">
-                          <div>
-                            <div className="client-title-name">
-                              {item.clientTitle}
-                            </div>
-                            <div className="client-paragraph">
-                              {item.clientName}
-                            </div>
-                          </div>
-                          <div>
-                            <div className="client-budget-text">
-                              {item.clientBudgetText}
-                            </div>
-                            <div className="client-budget">
-                              {item.clientBudget}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="space-div"></div>
+    <div className="container-slider-home-page">
+      <div className="carousel">
+        <Slider {...settings}>
+          {/* FIRST SLIDER */}
+          <div className="make-a-box">
+            <div className="image-box">
+              <img className="image" src={imageSection} alt="" />
+            </div>
+            <div className="content-box">
+              <img className="logo" src={logoImage} alt="" />
+              <h1 className="title">App Design</h1>
+              <p className="paragraph">
+                Discover powerful features to boost your productivity. You are
+                always welcome to visit our little den. Professional in their
+                our little den. Professional in their link
+              </p>
+              <span className="line-gray"></span>
+              <div className="client-and-budge">
+                <div className="clientName">
+                  <p className="title-clientName">Client Name</p>
+                  <p className="description-clientName">Khalid Atayee</p>
                 </div>
-              </React.Fragment>
-            ))}
-          </Slider>
-        </div>
+                <div className="budge">
+                  <p className="title-budge">budge</p>
+                  <p className="description-budge">$500-100k</p>
+                </div>
+                <div className="button">
+                  <svg
+                    className="button-content"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="52"
+                    viewBox="0 0 52 52"
+                    fill="none"
+                  >
+                    <path
+                      d="M27.3333 21L32 25.6667M32 25.6667L27.3333 30.3333M32 25.6667H20"
+                      stroke="#0F0400"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <rect
+                      opacity="0.1"
+                      width="52"
+                      height="52"
+                      rx="26"
+                      fill="#FF5722"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* SECOND SLIDER */}
+          <div className="make-a-box">
+            <div className="image-box">
+              <img className="image" src={imageSection} alt="" />
+            </div>
+            <div className="content-box">
+              <img className="logo" src={logoImage} alt="" />
+              <h1 className="title">App Design</h1>
+              <p className="paragraph">
+                Discover powerful features to boost your productivity. You are
+                always welcome to visit our little den. Professional in their
+                our little den. Professional in their link
+              </p>
+              <span className="line-gray"></span>
+              <div className="client-and-budge">
+                <div className="clientName">
+                  <p className="title-clientName">Client Name</p>
+                  <p className="description-clientName">Khalid Atayee</p>
+                </div>
+                <div className="budge">
+                  <p className="title-budge">budge</p>
+                  <p className="description-budge">$500-100k</p>
+                </div>
+                <div className="button">
+                  <svg
+                    className="button-content"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="52"
+                    viewBox="0 0 52 52"
+                    fill="none"
+                  >
+                    <path
+                      d="M27.3333 21L32 25.6667M32 25.6667L27.3333 30.3333M32 25.6667H20"
+                      stroke="#0F0400"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <rect
+                      opacity="0.1"
+                      width="52"
+                      height="52"
+                      rx="26"
+                      fill="#FF5722"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* THIRD SLIDER */}
+          <div className="make-a-box">
+            <div className="image-box">
+              <img className="image" src={imageSection} alt="" />
+            </div>
+            <div className="content-box">
+              <img className="logo" src={logoImage} alt="" />
+              <h1 className="title">App Design</h1>
+              <p className="paragraph">
+                Discover powerful features to boost your productivity. You are
+                always welcome to visit our little den. Professional in their
+                our little den. Professional in their link
+              </p>
+              <span className="line-gray"></span>
+              <div className="client-and-budge">
+                <div className="clientName">
+                  <p className="title-clientName">Client Name</p>
+                  <p className="description-clientName">Khalid Atayee</p>
+                </div>
+                <div className="budge">
+                  <p className="title-budge">budge</p>
+                  <p className="description-budge">$500-100k</p>
+                </div>
+                <div className="button">
+                  <svg
+                    className="button-content"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="52"
+                    viewBox="0 0 52 52"
+                    fill="none"
+                  >
+                    <path
+                      d="M27.3333 21L32 25.6667M32 25.6667L27.3333 30.3333M32 25.6667H20"
+                      stroke="#0F0400"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <rect
+                      opacity="0.1"
+                      width="52"
+                      height="52"
+                      rx="26"
+                      fill="#FF5722"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Slider>
       </div>
     </div>
   );

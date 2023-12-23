@@ -10,7 +10,7 @@
 .container-WhyWeExist {
     width: 100%;
     height: auto;
-    padding: 50px 0px;
+    margin: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,6 +449,11 @@
 
     .box-for-buttons-WhyWeExist {
         flex-direction: column;
+    }
+
+    /* LERAN MORE BUTTON */
+    .learn-more-WhyWeExist {
+        padding: 18px 10px 18px 0px;
     }
 }
 

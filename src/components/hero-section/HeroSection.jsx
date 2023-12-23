@@ -1,20 +1,14 @@
-// importing react to write react code
 import React from "react";
-// importing the arrow icon to use with button learn more
+// icon arrow right
 import { FaArrowRight } from "react-icons/fa";
-// importing the image for the hero section
-import SectionImage from "../../assets/9c382122aa463071e259ffe97c1ab2ca.png";
-// importing css file
+import SectionImage from "./assets/9c382122aa463071e259ffe97c1ab2ca.png";
 import "./hero-section.css";
 
 // THE HERO SECTION STARTS HERE
 const HeroSection = () => {
   return (
-    // the container starts here
-    <div className="container-hero-section">
-      {/* using the contianer below to make the page two parts with flex box */}
-      <div className="container-content">
-        {/* the box below is for descriptions like title, paragraph and button*/}
+    <div className="container-hero-section-home-page">
+      <div className="container-content-home-page">
         <div className="description-box">
           <p className="title-of-the-section">
             Empowering Businesses Through Innovative Software Solutions
@@ -53,9 +47,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-    //the container starts here
   );
 };
 // THE HERO SECTION ENDS HERE
-
 export default HeroSection;

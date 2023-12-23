@@ -4,13 +4,14 @@
     --mainColor: #FF5722;
     --text-color: #071920;
     --hover-color: #FF5722;
+    --Get-in-touch-text-color: #ffe7bb;
 }
 
 /* STYLING THE CONTAINER DIV */
-.container-hero-section {
+.container-hero-section-home-page {
     width: 100%;
     height: auto;
-    padding: 50px 0px;
+    margin: 50px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,7 +19,7 @@
 }
 
 /* STYLING THE CONTENT BOX IN CONTAINER */
-.container-content {
+.container-content-home-page {
     width: 80%;
     height: auto;
     display: flex;
@@ -68,7 +69,7 @@
 
 /* GET IN TOUCH BUTTONS */
 .Get-in-touch {
-    color: #ffe7bb;
+    color: var(--Get-in-touch-text-color);
     font-size: 14px;
     background-color: var(--mainColor);
     padding: 15px 24px;
@@ -80,7 +81,6 @@
 /* HOVER EFFECT FOR GET IN TOUCH BUTTON */
 .Get-in-touch:hover {
     transform: translateY(-2px);
-    background-color: #ff8a66;
 }
 
 /* STYLING THE BUTTON THAT CONTAINS ONE BUTTON AND ON ICON */
@@ -138,73 +138,57 @@
 
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
-    .container-content {
+    .container-content-home-page {
         width: 50%;
     }
 }
 
 /* Responsived in max width 1920px */
 @media (max-width: 1920px) {
-    .container-hero-section {
-        padding: 110px 0px;
-    }
-
-    .container-content {
+    .container-content-home-page {
         width: 70%;
     }
 }
 
 /* Responsived in max width 1400px */
 @media (max-width: 1400px) {
-
-
-    .container-content {
+    .container-content-home-page {
         width: 80%;
     }
 }
 
 /* Responsived in max width 1200px */
 @media (max-width: 1200px) {
-
-
-    .container-content {
+    .container-content-home-page {
         width: 90%;
     }
 }
 
 /* Responsived in max width 992px */
 @media (max-width: 992px) {
-
-    /* STYLING THE CONTENT BOX IN CONTAINER */
-    .container-content {
+    .container-content-home-page {
         width: 95%;
     }
 
-    /* TITLE OF THE SECTION */
     .title-of-the-section {
         font-size: 28px;
         font-weight: 600;
         line-height: 40px;
     }
 
-    /* PARAGRAPH OF THE SECTION BELOW THE TITLE */
     .paragraph-of-the-section {
         font-size: 14px;
     }
 
-    /* GET IN TOUCH BUTTONS */
     .Get-in-touch {
         font-size: 14px;
         padding: 15px 20px;
     }
 
-    /* STYLING THE IMAGE BOX THAT CONTAINS THE IMAGE OF THE SECTION  */
     .image-box {
         justify-content: center;
     }
 
-
-    /* THE IMAGE OF THE SECTION */
     .image-of-the-hero-section {
         width: 300px;
         height: 370px;
@@ -214,35 +198,28 @@
 /* Responsived in max width 768px */
 @media (max-width: 768px) {
 
-    /* STYLING THE CONTAINER DIV */
-    .container-hero-section {
+    .container-hero-section-home-page {
         width: 100%;
         padding: 15px 0px;
-
     }
 
-
-    /* STYLING THE CONTENT BOX IN CONTAINER */
-    .container-content {
+    .container-content-home-page {
         width: 80%;
         flex-direction: column;
         justify-content: center;
     }
 
-    /* STYLING THE IMAGE BOX THAT CONTAINS THE IMAGE OF THE SECTION  */
     .image-box {
         width: 100%;
         justify-content: center;
     }
 
-    /* THE IMAGE OF THE SECTION */
     .image-of-the-hero-section {
         width: 300px;
         height: 380px;
         order: 2;
     }
 
-    /* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
     .description-box {
         width: 100%;
         order: 1;
@@ -251,14 +228,10 @@
 
 /* Responsived in max width 567px */
 @media (max-width: 576px) {
-
-    /* STYLING THE CONTENT BOX IN CONTAINER */
-    .container-content {
+    .container-content-home-page {
         width: 90%;
     }
 
-
-    /* THE IMAGE OF THE SECTION */
     .image-of-the-hero-section {
         width: 275px;
         height: 345px;
@@ -267,30 +240,31 @@
 
 /* Responsived in max width 400px */
 @media (max-width: 400px) {
-
-    /* TITLE OF THE SECTION */
     .title-of-the-section {
         font-size: 20px;
         font-weight: 800;
         line-height: 30px;
     }
 
-    /* GET IN TOUCH BUTTONS */
     .Get-in-touch {
-        color: #ffe7bb;
         font-size: 14px;
-        background-color: var(--mainColor);
         padding: 10px 6px;
     }
 
-    /* LERAN MORE BUTTON */
     .learn-more {
         padding: 10px 6px 10px 10px;
     }
 
-    /* THE IMAGE OF THE SECTION */
     .image-of-the-hero-section {
         width: 200px;
         height: 250px;
+    }
+
+    .box-for-buttons {
+        flex-direction: column;
+    }
+
+    .learn-more {
+        padding: 18px 10px 18px 10px;
     }
 }

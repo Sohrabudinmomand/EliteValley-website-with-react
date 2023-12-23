@@ -2,10 +2,10 @@ import React from "react";
 // importing the arrow icon to use with button learn more
 import { FaArrowRight } from "react-icons/fa";
 
-import subContentImage from "../../assets/box-img-in-why-we-exist-section.png";
+import subContentImage from "./assets/box-img-in-why-we-exist-section.png";
 
-import FirstIconBox from "../../assets/icon-1-in-cards.png";
-import SecondIconBox from "../../assets/icon-2-in-cards.png";
+import FirstIconBox from "./assets/icon-1-in-cards.png";
+import SecondIconBox from "./assets/icon-2-in-cards.png";
 
 import "../how it works/how-it-works.css";
 
@@ -81,7 +81,7 @@ const HowItWorks = () => {
               <div className="control-the-image">
                 <img
                   className="image-payment-how-it-works"
-                  src={FirstIconBox}
+                  src={SecondIconBox}
                   alt="icon"
                 />
               </div>

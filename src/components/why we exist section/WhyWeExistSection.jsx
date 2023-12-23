@@ -1,9 +1,9 @@
 import React from "react";
-// importing the arrow icon to use with button learn more
+// right arrow
 import { FaArrowRight } from "react-icons/fa";
 
 // importing the image of the why we exist section
-import WhyWeExistSectionImage from "../../assets/Rectangle.png";
+import WhyWeExistSectionImage from "./assets/Rectangle.png";
 
 import "./WhyWeExist.css";
 
@@ -31,9 +31,9 @@ const WhyWeExistSection = () => {
         <path
           d="M19 28.1111L14.5 32M14.5 32L10 28.1111M14.5 32L14.5 22"
           stroke="#FF5722"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <circle cx="15" cy="13" r="2" fill="#FF5722" />
       </svg>
