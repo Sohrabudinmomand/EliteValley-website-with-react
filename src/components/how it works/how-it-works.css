@@ -198,15 +198,13 @@
 
 
 .control-the-image {
+    width: 115px;
     background: #fff;
     border-radius: 16px;
     box-shadow: 9px 11px 23px 0 rgba(6, 61, 79, .12);
     height: 115px;
-    line-height: 115px;
     margin-bottom: 30px;
-    max-width: 104px;
     text-align: center;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,7 +405,7 @@
     }
 
     .card-descriptions-box-in-how-it-works {
-        height: 60vh;
+        height: 90vh;
     }
 
     .managment-card-content {
@@ -422,7 +420,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -446,7 +444,7 @@
     }
 
     .sub-content-boxes {
-        width: 260px;
+        width: 230px;
     }
 }
 

@@ -11,14 +11,31 @@ const SliderHomepage = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1.55, // Changed to an integer value
+    slidesToShow: 1.55, // Default value for larger screens
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-
     responsive: [
       {
-        breakpoint: 1,
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 2.3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 1.88,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1400,
         settings: {
           slidesToShow: 1.55,
           slidesToScroll: 1,
@@ -27,23 +44,21 @@ const SliderHomepage = () => {
         },
       },
       {
-        breakpoint: 1920,
+        breakpoint: 1100,
         settings: {
-          slidesToShow: 2.55, // Changed to an integer value
+          slidesToShow: 1.22,
           slidesToScroll: 1,
-          initialSlide: 1,
+          infinite: true,
+          dots: true,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 1.55,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 1.55,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
         },
       },
     ],
@@ -52,7 +67,7 @@ const SliderHomepage = () => {
   return (
     <div className="container-slider-home-page">
       <div className="carousel">
-        <Slider {...settings}>
+        <Slider {...settings} className="custom-slider">
           {/* FIRST SLIDER */}
           <div className="make-a-box">
             <div className="image-box">
