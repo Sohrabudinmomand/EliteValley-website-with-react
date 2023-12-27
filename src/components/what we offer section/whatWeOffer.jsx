@@ -9,7 +9,7 @@ const WhatWeOffer = () => {
   const handleDivClick = (divNumber) => {
     if (containerWidth > 768) {
       if (containerWidth > 1920) {
-        setExpandedDiv(divNumber === expandedDiv ? null : divNumber);
+        setExpandedDiv((prev) => (prev === divNumber ? null : divNumber));
       } else {
         setExpandedDiv(divNumber);
       }
@@ -17,11 +17,13 @@ const WhatWeOffer = () => {
   };
 
   const getPStyle = (divNumber) => {
-    return containerWidth > 768
-      ? expandedDiv === divNumber
+    if (containerWidth <= 768) {
+      return { display: "block" };
+    } else {
+      return expandedDiv === divNumber
         ? { display: "block" }
-        : { display: "none" }
-      : {};
+        : { display: "none" };
+    }
   };
 
   const getDivWidth = (divNumber) => {
@@ -38,15 +40,12 @@ const WhatWeOffer = () => {
     }
   };
 
-  const getAdditionalH2Style = (divNumber) => {
-    if (containerWidth <= 768) {
-      return { writingMode: "horizontal-tb" };
-    } else {
-      return expandedDiv === divNumber
-        ? { writingMode: "horizontal-tb" }
-        : { writingMode: "vertical-rl" };
-    }
-  };
+  const getAdditionalH2Style = (divNumber) => ({
+    writingMode:
+      containerWidth <= 768 || expandedDiv === divNumber
+        ? "horizontal-tb"
+        : "vertical-rl",
+  });
 
   const handleResize = () => {
     setContainerWidth(window.innerWidth);
@@ -59,16 +58,49 @@ const WhatWeOffer = () => {
     };
   }, []);
 
+  const expandableDivData = [
+    {
+      boxNumber: "01.",
+      boxTitle: "Hosting",
+      boxDescription:
+        "Blocks infected website tracking programs and annoying links",
+    },
+    {
+      boxNumber: "01.",
+      boxTitle: "Hosting",
+      boxDescription:
+        "Blocks infected website tracking programs and annoying links",
+    },
+    {
+      boxNumber: "01.",
+      boxTitle: "Hosting",
+      boxDescription:
+        "Blocks infected website tracking programs and annoying links",
+    },
+    {
+      boxNumber: "01.",
+      boxTitle: "Hosting",
+      boxDescription:
+        "Blocks infected website tracking programs and annoying links",
+    },
+    {
+      boxNumber: "01.",
+      boxTitle: "Hosting",
+      boxDescription:
+        "Blocks infected website tracking programs and annoying links",
+    },
+  ];
+
   return (
     // container starts here
     <div className="container-what-we-offer">
-      {/* this is the contianer for the contents of this section starts here */}
+      {/* this is the container for the contents of this section starts here */}
       <div className="content-of-what-we-offer-section">
         <div className="description-box-what-we-offer-section">
           <div className="box-content-1">
-            <div class="making-the-two-span-in-one-row">
-              <span class="span-line">______</span>
-              <span class="what-we-offer">What We Offer</span>
+            <div className="making-the-two-span-in-one-row">
+              <span className="span-line">______</span>
+              <span className="what-we-offer">What We Offer</span>
             </div>
             <h1 className="title-of-the-WhatWeOffer-section">
               What we offer is awesome
@@ -91,63 +123,27 @@ const WhatWeOffer = () => {
             />
           </div>
           <div className="panel-box-what-we-offer-section">
-            <div
-              className="child-div"
-              style={{ width: getDivWidth(1) }}
-              onClick={() => handleDivClick(1)}
-            >
-              <h2>01.</h2>
-              <h2 className="additional-h2" style={getAdditionalH2Style(1)}>
-                Hosting
-              </h2>
-
-              <p style={getPStyle(1)}>
-                Blocks infected website tracking programs and annoying link
-              </p>
-            </div>
-            <div
-              className="child-div"
-              style={{ width: getDivWidth(2) }}
-              onClick={() => handleDivClick(2)}
-            >
-              <h2>02.</h2>
-              <h2 className="additional-h2" style={getAdditionalH2Style(2)}>
-                Web App Dev
-              </h2>
-              <p style={getPStyle(2)}>
-                Blocks infected website tracking programs and annoying.
-              </p>
-            </div>
-            <div
-              className="child-div"
-              style={{ width: getDivWidth(3) }}
-              onClick={() => handleDivClick(3)}
-            >
-              <h2>03.</h2>
-              <h2 className="additional-h2" style={getAdditionalH2Style(3)}>
-                Graphic Design
-              </h2>
-              <p style={getPStyle(3)}>
-                Blocks infected website tracking programs and annoying.
-              </p>
-            </div>
-            <div
-              className="child-div"
-              style={{ width: getDivWidth(4) }}
-              onClick={() => handleDivClick(4)}
-            >
-              <h2>04.</h2>
-              <h2 className="additional-h2" style={getAdditionalH2Style(4)}>
-                Title 4
-              </h2>
-              <p style={getPStyle(4)}>
-                Blocks infected website tracking programs and annoying.
-              </p>
-            </div>
+            {expandableDivData.map((item, index) => (
+              <div
+                key={index}
+                className="child-div"
+                style={{ width: getDivWidth(index + 1) }}
+                onClick={() => handleDivClick(index + 1)}
+              >
+                <h2>{item.boxNumber}</h2>
+                <h2
+                  className="additional-h2"
+                  style={getAdditionalH2Style(index + 1)}
+                >
+                  {item.boxTitle}
+                </h2>
+                <p style={getPStyle(index + 1)}>{item.boxDescription}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      {/* this is the contianer for the contents of this section ends here */}
+      {/* this is the container for the contents of this section ends here */}
     </div>
     // container ends here
   );

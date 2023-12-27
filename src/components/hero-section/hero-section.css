@@ -1,13 +1,18 @@
 /* THE ROOT CSS */
 :root {
+    --titles-font-size: 48px;
+    --descriptions-font-size: 16px;
     --mainBackgroundColr: #ffffff;
     --mainColor: #FF5722;
     --text-color: #071920;
     --hover-color: #FF5722;
-    --Get-in-touch-text-color: #ffe7bb;
+    --border-gray: #CDE2E7;
+    --bg-white: #ffffff;
+    --description-color: #667085;
+    --border-top-at-the-footer: #EFEFEF;
+    --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
 }
 
-/* STYLING THE CONTAINER DIV */
 .container-hero-section-home-page {
     width: 100%;
     height: auto;
@@ -18,7 +23,6 @@
     align-items: center;
 }
 
-/* STYLING THE CONTENT BOX IN CONTAINER */
 .container-content-home-page {
     width: 80%;
     height: auto;
@@ -28,7 +32,6 @@
     align-items: center;
 }
 
-/* STYLING THE BOX DESCRIPTION THAT CONTAINS TITLE, PARAGRAPH AND BUTTONS */
 .description-box {
     width: 50%;
     height: auto;
@@ -36,29 +39,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-bottom: 53px;
+    gap: 30px;
 }
 
-/* TITLE OF THE SECTION */
 .title-of-the-section {
     color: var(--mainColor);
-    font-size: 48px;
+    font-size: var(--titles-font-size);
     font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    margin-bottom: 18px;
+    font-weight: 400;
+    line-height: 55spx;
 }
 
-/* PARAGRAPH OF THE SECTION BELOW THE TITLE */
 .paragraph-of-the-section {
     color: var(--text-color);
-    font-size: 16px;
+    font-size: var(--descriptions-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
 }
 
-/* STYLING THE DIV FOR TWO BUTTONS IN THE SECTION  */
 .box-for-buttons {
     margin-top: 40px;
     display: flex;
@@ -67,7 +66,6 @@
     align-items: center;
 }
 
-/* GET IN TOUCH BUTTONS */
 .Get-in-touch {
     color: var(--Get-in-touch-text-color);
     font-size: 14px;
@@ -78,12 +76,10 @@
     transition: 0.2s;
 }
 
-/* HOVER EFFECT FOR GET IN TOUCH BUTTON */
 .Get-in-touch:hover {
     transform: translateY(-2px);
 }
 
-/* STYLING THE BUTTON THAT CONTAINS ONE BUTTON AND ON ICON */
 .making-elements-flex {
     display: flex;
     flex-direction: row;
@@ -92,7 +88,6 @@
     transition: 0.2s;
 }
 
-/* LERAN MORE BUTTON */
 .learn-more {
     color: var(--text-color);
     font-size: 14px;
@@ -105,7 +100,6 @@
     transition: 0.2s;
 }
 
-/* RIGHT ARROW BESIDES THE ICON */
 .right-arrow {
     font-size: 20px;
     font-weight: 400;
@@ -113,7 +107,6 @@
     vertical-align: middle;
 }
 
-/* HOVER EFFECT FOR BUTTON LEARN MORE AND RIGHT ARROW ICON */
 .making-elements-flex:hover,
 .learn-more:hover {
     color: var(--hover-color);
@@ -125,9 +118,8 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 105px;
 }
 
 /* THE IMAGE OF THE SECTION */
@@ -152,13 +144,6 @@
 
 /* Responsived in max width 1400px */
 @media (max-width: 1400px) {
-    .container-content-home-page {
-        width: 80%;
-    }
-}
-
-/* Responsived in max width 1200px */
-@media (max-width: 1200px) {
     .container-content-home-page {
         width: 90%;
     }
@@ -187,6 +172,7 @@
 
     .image-box {
         justify-content: center;
+        margin-bottom: 60px;
     }
 
     .image-of-the-hero-section {

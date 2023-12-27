@@ -313,7 +313,7 @@
 /* Responsived in max width 1400px */
 @media (max-width: 1400px) {
     .container-WhyWeExist-content {
-        width: 80%;
+        width: 90%;
     }
 
     .description-box-WhyWeExist {
@@ -325,11 +325,6 @@
 
 /* Responsived in max width 1200px */
 @media (max-width: 1200px) {
-    .container-WhyWeExist-content {
-        width: 90%;
-    }
-
-
     .description-box-WhyWeExist {
         gap: 0px;
         padding: 20px 0px;
@@ -349,7 +344,7 @@
 
 @media (max-width: 992px) {
     .container-WhyWeExist-content {
-        width: 90%;
+        width: 95%;
         flex-direction: column;
     }
 
@@ -395,7 +390,7 @@
 /* Responsived in max width 768px */
 @media (max-width: 768px) {
     .container-WhyWeExist-content {
-        width: 80%;
+        width: 100%;
     }
 
     .title-of-the-WhyWeExist-section {

@@ -17,10 +17,9 @@ const Footer = () => {
   return (
     // container starts here
     <div className="container-footer">
+      {/* image box */}
+      <div className="img-box-footer"></div>
       <div className="content-container-footer">
-        {/* image box */}
-        <div className="img-box-footer"></div>
-
         <div className="content-box-footer">
           <h2 className="title-footer">You can help shape the future</h2>
           <p className="description-footer">
@@ -53,7 +52,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="copyRight-and-social-media">
-            <p className="copyRight">Copyright 2023</p>
+            <p className="copyRight">
+              Copyright 2023 developed and designed by sohrabudin momand
+            </p>
             <div className="social-media-icon">
               <FontAwesomeIcon className="icons faYoutube" icon={faYoutube} />
               <FontAwesomeIcon className="icons faFacebook" icon={faFacebook} />

@@ -10,6 +10,41 @@ import SecondIconBox from "./assets/icon-2-in-cards.png";
 import "../how it works/how-it-works.css";
 
 const HowItWorks = () => {
+  // sub content box
+  const subContentBoxData = [
+    {
+      image: subContentImage,
+      description: "Certification",
+      icon: <FaArrowRight className="icon-sub-content" />,
+    },
+    {
+      image: subContentImage,
+      description: "Certification",
+      icon: <FaArrowRight className="icon-sub-content" />,
+    },
+    {
+      image: subContentImage,
+      description: "Certification",
+      icon: <FaArrowRight className="icon-sub-content" />,
+    },
+
+    {
+      image: subContentImage,
+      description: "Certification",
+      icon: <FaArrowRight className="icon-sub-content" />,
+    },
+    {
+      image: subContentImage,
+      description: "Certification",
+      icon: <FaArrowRight className="icon-sub-content" />,
+    },
+    {
+      image: subContentImage,
+      description: "Certification",
+      icon: <FaArrowRight className="icon-sub-content" />,
+    },
+  ];
+
   return (
     // THE MAIN CONTAINER STARTS HERE
     <div className="container-how-it-works-section">
@@ -111,89 +146,25 @@ const HowItWorks = () => {
         {/* SUB CONTENT BOX STARTS HERE */}
         <div className="sub-content-how-it-works-section">
           {/* FIRST BOX */}
-          <div className="sub-content-boxes">
-            <div className="image-box-sub-content">
-              <img
-                className="image-content-sub-content"
-                src={subContentImage}
-                alt="sub content"
-              />
-            </div>
-            <div className="description-and-icon-sub-content">
-              <p className="description-content-sub-content">Certification</p>
-              <FaArrowRight className="icon-sub-content" />
-            </div>
-          </div>
-
-          <div className="sub-content-boxes">
-            <div className="image-box-sub-content">
-              <img
-                className="image-content-sub-content"
-                src={subContentImage}
-                alt="sub content"
-              />
-            </div>
-            <div className="description-and-icon-sub-content">
-              <p className="description-content-sub-content">Certification</p>
-              <FaArrowRight className="icon-sub-content" />
-            </div>
-          </div>
-
-          <div className="sub-content-boxes">
-            <div className="image-box-sub-content">
-              <img
-                className="image-content-sub-content"
-                src={subContentImage}
-                alt="sub content"
-              />
-            </div>
-            <div className="description-and-icon-sub-content">
-              <p className="description-content-sub-content">Certification</p>
-              <FaArrowRight className="icon-sub-content" />
-            </div>
-          </div>
-          {/* SECOND BOX */}
-          <div className="sub-content-boxes">
-            <div className="image-box-sub-content">
-              <img
-                className="image-content-sub-content"
-                src={subContentImage}
-                alt="sub content"
-              />
-            </div>
-            <div className="description-and-icon-sub-content">
-              <p className="description-content-sub-content">Certification</p>
-              <FaArrowRight className="icon-sub-content" />
-            </div>
-          </div>
-          {/* THIRD BOX */}
-          <div className="sub-content-boxes">
-            <div className="image-box-sub-content">
-              <img
-                className="image-content-sub-content"
-                src={subContentImage}
-                alt="sub content"
-              />
-            </div>
-            <div className="description-and-icon-sub-content">
-              <p className="description-content-sub-content">Certification</p>
-              <FaArrowRight className="icon-sub-content" />
-            </div>
-          </div>
-          {/* FOURTH BOX */}
-          <div className="sub-content-boxes">
-            <div className="image-box-sub-content">
-              <img
-                className="image-content-sub-content"
-                src={subContentImage}
-                alt="sub content"
-              />
-            </div>
-            <div className="description-and-icon-sub-content">
-              <p className="description-content-sub-content">Certification</p>
-              <FaArrowRight className="icon-sub-content" />
-            </div>
-          </div>
+          {subContentBoxData.map((item, index) => {
+            return (
+              <div key={index} className="sub-content-boxes">
+                <div className="image-box-sub-content">
+                  <img
+                    className="image-content-sub-content"
+                    src={item.image}
+                    alt="sub content"
+                  />
+                </div>
+                <div className="description-and-icon-sub-content">
+                  <p className="description-content-sub-content">
+                    {item.description}
+                  </p>
+                  {item.icon}
+                </div>
+              </div>
+            );
+          })}
         </div>
         {/* SUB CONTENT BOX ENDS HERE */}
       </div>
