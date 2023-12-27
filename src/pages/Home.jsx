@@ -6,7 +6,8 @@ import React from "react";
 // import GetInToucSectionHomePage from "../components/get in touch section home page/GetInToucSectionHomePage";
 // import EliteVallyCodeCompHeroSection from "../components/elite-valley-code-comp/EliteValleyCodeCompSectionHomePage";
 // import WhatOurCustomersAreSying from "../components/what our customers sying/WhatOurCustomersAreSying";
-import SliderHomepage from "../components/slider/SliderHomepage";
+// import SliderHomepage from "../components/slider/SliderHomepage";
+import Accordian from "../components/accordion/AccordionHomePage";
 
 function Home() {
   return (
@@ -18,7 +19,8 @@ function Home() {
       {/* <WhatOurCustomersAreSying /> */}
       {/* <EliteVallyCodeCompHeroSection /> */}
       {/* <GetInToucSectionHomePage /> */}
-      <SliderHomepage />
+      {/* <SliderHomepage /> */}
+      <Accordian />
     </div>
   );
 }
