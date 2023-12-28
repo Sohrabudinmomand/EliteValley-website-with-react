@@ -22,7 +22,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 2px solid green;
 }
 
 .first-div-what-our-customers-are-sying-homepage {
@@ -32,7 +31,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 
