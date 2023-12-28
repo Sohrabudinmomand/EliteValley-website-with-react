@@ -9,7 +9,7 @@
 .contianer-what-our-customers-are-sying-homepage {
     width: 100%;
     height: auto;
-    padding: 50px 0px 50px 0px;
+    margin: 100px 0px 100px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,79 +22,72 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    border: 2px solid green;
 }
 
 .first-div-what-our-customers-are-sying-homepage {
-    width: 40%;
-    height: 100vh;
-    font-size: 14px;
-    line-height: 30px;
+    width: 30%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border: 1px solid red;
 }
 
 
-
-
-
 .user-image-what-our-customers-are-sying-homepage {
-    width: 70%;
+    width: 100%;
 }
 
 
 .title-what-our-customers-are-sying-homepag {
     color: var(--mainColor);
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 40px;
     margin-bottom: 10px;
 }
 
 .paragraph-what-our-customers-are-sying-homepag {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px;
     margin-top: 10px;
 }
 
-
-.box-content-what-our-customers-are-sying-homepage {
-    width: 60%;
+.used-for-resposive-design {
+    width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
 }
 
 .left-two-boxes {
-    width: 50%;
-    height: 100vh;
+    width: 70%;
+    height: 650px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
 }
 
 .right-two-boxes {
-    width: 50%;
-    height: 100vh;
+    width: 70%;
+    height: 650px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: center;
     gap: 40px;
 }
 
 .container-content-boxes {
-    width: 300px;
+    width: 91%;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -163,45 +156,81 @@
 
 /* Responsived in max width 1920px */
 @media (max-width: 1920px) {
-
-    .contianer-what-our-customers-are-sying-homepage {
-        padding: 80px 0px 80px 0px;
-    }
-
-
     .container-content-what-our-customers-are-sying-homepage {
-        width: 60%;
+        width: 70%;
     }
-
-    .first-div-what-our-customers-are-sying-homepage {
-        height: 50vh;
-    }
-
-
-    .left-two-boxes {
-        height: 50vh;
-    }
-
-    .right-two-boxes {
-        height: 50vh;
-    }
-
 }
 
 /* Responsived in max width 1400px */
-@media (max-width: 1400px) {}
-
-/* Responsived in max width 1200px */
-@media (max-width: 1200px) {}
+@media (max-width: 1400px) {
+    .container-content-what-our-customers-are-sying-homepage {
+        width: 90%;
+    }
+}
 
 /* Responsived in max width 992px */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .container-content-what-our-customers-are-sying-homepage {
+        width: 95%;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .first-div-what-our-customers-are-sying-homepage {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .user-image-what-our-customers-are-sying-homepage {
+        width: 100%;
+    }
+}
 
 /* Responsived in max width 768px */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .container-content-what-our-customers-are-sying-homepage {
+        width: 100%;
+    }
+
+    .first-div-what-our-customers-are-sying-homepage {
+        width: 90%;
+    }
+
+    .used-for-resposive-design {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .left-two-boxes {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+
+    .right-two-boxes {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .container-content-boxes {
+        width: 100%;
+        height: 200px;
+    }
+}
 
 /* Responsived in max width 567px */
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .container-content-what-our-customers-are-sying-homepage {
+        width: 95%;
+    }
+}
 
 /* Responsived in max width 400px */
 @media (max-width: 400px) {}

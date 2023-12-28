@@ -4,8 +4,8 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 // importing the image for the hero section
-import EliteValleyCodeCompBanner from "../../assets/branding-image.png";
-import Testimonial from "../../assets/testimonial1.png";
+import EliteValleyCodeCompBanner from "./assets/branding-image.png";
+import Testimonial from "./assets/testimonial1.png";
 // importing css file
 import "./elite-valley-code-comp-section-home-page.css";
 

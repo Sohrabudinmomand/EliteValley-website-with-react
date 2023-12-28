@@ -112,7 +112,7 @@
 .container-elite-valley-code-comp-section-home-page {
     width: 100%;
     height: auto;
-    padding: 50px 0px;
+    margin: 100px 0px 100px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -166,19 +166,6 @@
     font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* TITLE OF THE SECTION */
 .title-of-the-section-elite-valley-code-comp-section-home-page {
     color: var(--mainColor);
@@ -196,10 +183,6 @@
     font-weight: 400;
     line-height: 24px;
 }
-
-
-
-
 
 .unordered-list-of-hero-section {
     margin-top: 15px;
@@ -223,9 +206,6 @@
     vertical-align: middle;
     color: #3d565f;
 }
-
-
-
 
 
 
@@ -446,6 +426,8 @@
     }
 
 
-
+    .box-for-buttons-elite-valley-code-comp-section-home-page {
+        flex-direction: column;
+    }
 
 }

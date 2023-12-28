@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./what-we-offer.css";
-import WhatWeOfferImage from "../../assets/what-we-offer-section.png";
+import WhatWeOfferImage from "./assets/what-we-offer-section.png";
 
 const WhatWeOffer = () => {
   const [containerWidth, setContainerWidth] = useState(window.innerWidth);

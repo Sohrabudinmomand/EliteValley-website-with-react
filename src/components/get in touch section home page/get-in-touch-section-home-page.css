@@ -12,6 +12,7 @@
 .get-in-touch-section-home-page-container {
     width: 100%;
     height: auto;
+    margin: 100px 0px 100px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,7 +22,7 @@
 /* styling the content box of get in touch section */
 .get-in-touch-content-home-page {
     width: 80%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -31,7 +32,7 @@
 /* styling the image box */
 .image-box-get-in-touch-content-home-page {
     width: 50%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -51,7 +52,7 @@
 /* this box conains title, paragraph and buttons */
 .description-box-get-in-touch-section-home-page {
     width: 50%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

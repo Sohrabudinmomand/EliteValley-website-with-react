@@ -3,7 +3,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 // importing the image for the hero section
-import GetInTouchSectionHomPageImage from "../../assets/getInTouchsectionHomePage.jpeg";
+import GetInTouchSectionHomPageImage from "./assets/getInTouchsectionHomePage.jpeg";
 import "../get in touch section home page/get-in-touch-section-home-page.css";
 
 const GetInToucSectionHomePage = () => {

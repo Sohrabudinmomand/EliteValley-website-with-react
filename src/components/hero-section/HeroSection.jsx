@@ -1,7 +1,7 @@
 import React from "react";
 // icon arrow right
 import { FaArrowRight } from "react-icons/fa";
-import SectionImage from "./assets/9c382122aa463071e259ffe97c1ab2ca.png";
+import SectionImage from "./assets/hero-section-img.png";
 import "./hero-section.css";
 
 // THE HERO SECTION STARTS HERE
