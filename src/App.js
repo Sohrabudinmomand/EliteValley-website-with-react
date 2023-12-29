@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home"
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Solutions from "./pages/Solutions";
 import CodeCamp from "./pages/CodeComp"; // Corrected import path
 import Contact from "./pages/Contact";
-import Navbar from "../src/components/navbar/NavBar";
+import Navbar from "./components/HomePageComponents/navbar/NavBar";
 import "./App.css";
 
 function App() {

@@ -1,0 +1,239 @@
+/* THE ROOT CSS */
+:root {
+    --mainBackgroundColr: #ffffff;
+    --mainColor: #FF5722;
+    --text-color: #071920;
+    --hover-color: #FF5722;
+    --expandabble-box: #FFF0EC;
+
+}
+
+.container-what-we-offer {
+    width: 100%;
+    height: auto;
+    margin: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-of-what-we-offer-section {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.description-box-what-we-offer-section {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.box-content-1 {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* bringing two span elements in one row */
+.making-the-two-span-in-one-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* a line befor why we exist text */
+.span-line {
+    padding: 0 10px 10px 0;
+    color: var(--text-color);
+}
+
+.what-we-offer {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+/* TITLE OF THE SECTION */
+.title-of-the-WhatWeOffer-section {
+    color: var(--mainColor);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+
+.box-content-2 {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box-content-2 p {
+    padding-top: 40px;
+}
+
+
+.expand-panels-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+
+.image-box-what-we-offer-section {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-what-we-offer-section {
+    width: 70%;
+}
+
+.panel-box-what-we-offer-section {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.child-div {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--expandabble-box);
+    border-radius: 23px;
+    border-top: 3px solid var(--mainColor);
+    padding: 20px;
+}
+
+.child-div h2 {
+    padding-bottom: 20px;
+}
+
+.child-div {
+    transition: width 0.4s ease-in-out;
+}
+
+/* Responsived in min width 1920px */
+@media (min-width: 1920px) {
+    .content-of-what-we-offer-section {
+        width: 50%;
+        height: 50vh;
+    }
+
+    .child-div {
+        height: 400px;
+    }
+
+    .child-div h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 68px;
+    }
+}
+
+
+@media (max-width: 1920px) {
+    .content-of-what-we-offer-section {
+        width: 70%;
+        height: auto;
+    }
+}
+
+/* Responsived in max width 1400px */
+@media (max-width: 1400px) {
+    .content-of-what-we-offer-section {
+        width: 90%;
+    }
+}
+
+/* Responsived in max width 1200px */
+@media (max-width: 1200px) {
+    .panel-box-what-we-offer-section {
+        width: 100%;
+    }
+
+    .image-box-what-we-offer-section {
+        display: none;
+    }
+}
+
+/* Responsived in max width 992px */
+@media (max-width: 992px) {
+    .content-of-what-we-offer-section {
+        width: 95%;
+    }
+
+    .description-box-what-we-offer-section {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .box-content-1 {
+        width: 100%;
+    }
+
+    .box-content-2 {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+    .content-of-what-we-offer-section {
+        justify-content: space-between;
+    }
+
+    .panel-box-what-we-offer-section {
+        flex-direction: column;
+    }
+}
+
+/* Responsived in max width 567px */
+@media (max-width: 576px) {
+    .content-of-what-we-offer-section {
+        width: 100%;
+    }
+
+    .title-of-the-WhatWeOffer-section {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .panel-box-what-we-offer-section {
+        padding: 0px 8px;
+    }
+}

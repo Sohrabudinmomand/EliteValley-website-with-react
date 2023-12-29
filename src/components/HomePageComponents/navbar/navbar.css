@@ -1,0 +1,196 @@
+/* RooTs for the navbar component */
+/* roots makes it easy to bring changes */
+:root {
+    --mainBackgroundColr: #ffffff;
+    --mainColor: #FF5722;
+    --text-color: #071920;
+    --hover-color: #FF5722;
+}
+
+/* STYLING THE HEADER DIV BOX */
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 16px;
+    background: var(--mainBackgroundColr);
+    border: 1px solid #FFE7BB;
+}
+
+/* logo box of the page */
+.logo-box {
+    width: 20%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* logo image */
+.logo-img {
+    width: 120px;
+    height: 70px;
+}
+
+/* STYLING THE NAV BAR CONTENTS BOX */
+.navbar {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* STYLING THE MANAGMENT PART */
+.nav-content-managment {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+/* STYLING THE NAVBAR LINKS */
+.a-tags-in-navbar {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    padding: 0px 30px;
+    transition: 0.3s;
+}
+
+/* STYLING FOR THE HEADER */
+.navbar .a-tags-in-navbar:hover {
+    color: var(--mainColor);
+}
+
+.navbar .a-tags-in-navbar:active {
+    color: var(--mainColor);
+}
+
+/* STYLING THE BARS OR THE HUMBURGER ICON */
+.header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--mainColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 20PX;
+}
+
+/* STYLING THE BUTTON FREE QOUTE */
+.free-quote {
+    padding: 8px 12px;
+    background-color: var(--mainColor);
+    color: #FFE7BB;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+/* Responsived in min width 1920px */
+@media (min-width: 1920px) {
+    .navbar {
+        width: 60%;
+    }
+}
+
+/* Responsived in max width 1920px */
+@media (max-width: 1920px) {
+
+    /* STYLING THE NAV BAR CONTENTS BOX */
+    .navbar {
+        width: 70%;
+    }
+}
+
+/* Responsived in max width 1400px */
+@media (max-width: 1400px) {
+
+    /* STYLING THE NAV BAR CONTENTS BOX */
+    .navbar {
+        width: 80%;
+    }
+}
+
+/* Responsived in max width 992px */
+@media (max-width: 992px) {
+
+    /* STYLING THE NAVBAR LINKS */
+    .a-tags-in-navbar {
+        padding: 0px 15px;
+    }
+}
+
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+
+    /* STYLING THE HEADER DIV BOX */
+    .header {
+        justify-content: space-between;
+    }
+
+    /* STYLING THE BARS OR THE HUMBURGER ICON */
+    .header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* STYLING THE NAV BAR CONTENTS BOX */
+    .header .navbar {
+        position: fixed;
+        top: -100vh;
+        right: 0;
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: var(--mainBackgroundColr);
+        transition: 1s;
+    }
+
+    /* STYLING THE MANAGMENT PART */
+    .nav-content-managment {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    .navbar .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .navbar .a-tags-in-navbar {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 50px;
+    }
+
+    /* logo image */
+    .logo-img {
+        width: 80px;
+        height: 40px;
+    }
+}
