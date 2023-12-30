@@ -30,8 +30,8 @@
     --container-width-992px-max-width: 95%;
     --container-width-768px-max-width: 100%;
     --container-width-576px-max-width: 90%;
-    --container-width-400px-max-width: 90%;
-    --container-width-300px-max-width: 90%;
+    --container-width-400px-max-width: 99%;
+    --container-width-300px-max-width: 99%;
 }
 
 * {
@@ -108,7 +108,6 @@
     align-items: center;
     gap: 50px;
     margin-top: 40px;
-    border: 2px solid red;
 }
 
 .image-box-about-page {
@@ -203,21 +202,21 @@
 
 /* Responsived in min width 1920px */
 @media (min-width: 1920px) {
-    .content-accordian-home-page {
+    .content-story-section-about-page {
         width: var(--container-width-1920px-min-width);
     }
 }
 
 
 @media (max-width: 1920px) {
-    .content-accordian-home-page {
+    .content-story-section-about-page {
         width: var(--container-width-1920px-max-width);
     }
 }
 
 /* Responsived in max width 1400px */
 @media (max-width: 1400px) {
-    .content-accordian-home-page {
+    .content-story-section-about-page {
         width: var(--container-width-1400px-max-width);
     }
 }
@@ -227,33 +226,69 @@
 
 /* Responsived in max width 992px */
 @media (max-width: 992px) {
-    .content-accordian-home-page {
+    .content-story-section-about-page {
         width: var(--container-width-992px-max-width);
     }
 }
 
 /* Responsived in max width 768px */
 @media (max-width: 768px) {
-    .content-accordian-home-page {
+    .content-story-section-about-page {
         width: var(--container-width-768px-max-width);
     }
 
+    .title-text-about-page {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .image-and-research-parts {
+        flex-direction: column;
+    }
+
+    .image-box-about-page {
+        width: 80%;
+    }
+
+    .image-about-section {
+        width: 100%;
+    }
+
+    .research-parts {
+        width: 80%;
+    }
 }
 
 /* Responsived in max width 567px */
 @media (max-width: 576px) {
-    .content-accordian-home-page {
+    .content-story-section-about-page {
         width: var(--container-width-576px-max-width);
+    }
+
+    .title-text-about-page {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .image-box-about-page {
+        width: 100%;
+    }
+
+    .research-parts {
+        width: 100%;
     }
 
 }
 
 
 /* Responsived in max width 567px */
-@media (max-width: 408px) {
-    .content-accordian-home-page {
+@media (max-width: 400px) {
+    .content-story-section-about-page {
         width: var(--container-width-400px-max-width);
     }
 
-
+    .title-text-about-page {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
