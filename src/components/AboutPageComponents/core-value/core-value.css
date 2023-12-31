@@ -1,0 +1,150 @@
+/* THE ROOT CSS */
+:root {
+    --title-color: #FF5722;
+    --title-font-size: 48px;
+    --buttons-font-size: 14px;
+    --black-paragraph-color: #0F0400;
+    --gray-paragraph-color: #667085;
+    --paragraph-font-size: 16px;
+    --small-font-size: 14px;
+    --global-transform: translateY(-3px);
+    --buttons-bacnkground-Color: #FF5722;
+    --icons-color: #FF5722;
+    --hover-color: #FF5722;
+    --border-orange: #FF5722;
+    --border-gray: #CDE2E7;
+    --bg-white: #ffffff;
+    --buttons-text-color: #0F0400;
+    --border-top-at-the-footer: #EFEFEF;
+    --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
+    --background-color-hero-section-about-page: linear-gradient(98deg, #E0F7FF 0%, #FFE7BB 100%);
+    --padding-to-make-button: 15px 24px;
+    --margin-top-and-bottom-for-every-components: 100px 0px 100px 0px;
+    --only-margin-top-for-every-components: 100px 0px 0px 0px;
+    --only-margin-bottom-for-every-components: 0px 0px 100px 0px;
+    --large-font-weight-for-titles: 48px;
+    --large-font-weight-for-paragraph: 400px;
+    --container-width-1920px-min-width: 50%;
+    --container-width-1920px-max-width: 70%;
+    --container-width-1400px-max-width: 90%;
+    --container-width-992px-max-width: 95%;
+    --container-width-768px-max-width: 100%;
+    --container-width-576px-max-width: 90%;
+    --container-width-400px-max-width: 90%;
+    --container-width-300px-max-width: 90%;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container-core-value-about-page {
+    width: 100%;
+    height: auto;
+    margin: var(--margin-top-and-bottom-for-every-components);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container-core-value-about-page {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.description-box-core-value {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: #FF5722 2px solid;
+}
+
+.title-of-core-value-about-page {
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+.paragraph-and-button-box-core-value {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrahp-in-core-value {
+    color: var(--black-paragraph-color);
+    font-size: var(--small-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.images-in-core-value {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-and-descripion {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.firstImageCoreValue {
+    width: 100%;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
+.description-in-img-core-value {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.title-core-value-image {
+    color: var(--title-color);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+
+.paragraph-core-value-image {
+    color: var(--black-paragraph-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
