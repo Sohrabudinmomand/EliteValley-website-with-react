@@ -1,12 +1,39 @@
 /* THE ROOT CSS */
 :root {
-    --mainBackgroundColr: #ffffff;
-    --mainColor: #FF5722;
-    --text-color: #071920;
+    --title-color: #FF5722;
+    --title-font-size: 48px;
+    --buttons-font-size: 14px;
+    --black-paragraph-color: #0F0400;
+    --gray-paragraph-color: #667085;
+    --paragraph-font-size: 16px;
+    --small-font-size: 14px;
+    --global-transform: translateY(-3px);
+    --buttons-bacnkground-Color: #FF5722;
+    --icons-color: #FF5722;
     --hover-color: #FF5722;
+    --border-orange: #FF5722;
     --border-gray: #CDE2E7;
     --bg-white: #ffffff;
+    --buttons-text-color: #0F0400;
+    --border-top-at-the-footer: #EFEFEF;
+    --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
+    --background-color-hero-section-about-page: linear-gradient(98deg, #E0F7FF 0%, #FFE7BB 100%);
+    --padding-to-make-button: 15px 24px;
+    --margin-top-and-bottom-for-every-components: 100px 0px;
+    --only-margin-top-for-every-components: 100px;
+    --only-margin-bottom-for-every-components: 100px;
+    --large-font-weight-for-titles: 48px;
+    --large-font-weight-for-paragraph: 400px;
+    --container-width-1920px-min-width: 50%;
+    --container-width-1920px-max-width: 90%;
+    --container-width-1400px-max-width: 90%;
+    --container-width-992px-max-width: 70%;
+    --container-width-768px-max-width: 80%;
+    --container-width-576px-max-width: 90%;
+    --container-width-400px-max-width: 95%;
+    --container-width-300px-max-width: 97%;
 }
+
 
 .happy-clients {
     width: fit-content !important;
@@ -113,7 +140,7 @@
 .container-elite-valley-code-comp-section-home-page {
     width: 100%;
     height: auto;
-    margin: 100px 0px 100px 0px;
+    margin: var(--margin-top-and-bottom-for-every-components);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -143,11 +170,6 @@
     gap: 10px;
 }
 
-
-
-
-
-
 /* bringing two span elements in one row */
 .making-the-two-span-in-one-row {
     display: flex;
@@ -159,18 +181,18 @@
 /* a line befor why we exist text */
 .span-line {
     padding: 0 10px 10px 0;
-    color: var(--text-color);
+    color: var(--black-paragraph-color);
 }
 
 .what-we-offer {
-    color: var(--text-color);
+    color: var(--black-paragraph-color);
     font-size: 18px;
 }
 
 /* TITLE OF THE SECTION */
 .title-of-the-section-elite-valley-code-comp-section-home-page {
-    color: var(--mainColor);
-    font-size: 48px;
+    color: var(--title-color);
+    font-size: var(--title-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 56px;
@@ -178,8 +200,8 @@
 
 /* PARAGRAPH OF THE SECTION BELOW THE TITLE */
 .paragraph-of-elite-valley-code-comp-section-home-page {
-    color: var(--text-color);
-    font-size: 16px;
+    color: var(--black-paragraph-color);
+    font-size: var(--paragraph-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -220,10 +242,10 @@
 
 /* GET IN TOUCH BUTTONS */
 .Get-in-touch-elite-valley-code-comp-section-home-page {
-    color: #ffe7bb;
-    font-size: 14px;
+    color: var(--buttons-text-color);
+    font-size: var(--small-font-size);
     background-color: var(--mainColor);
-    padding: 15px 24px;
+    padding: var(--padding-to-make-button);
     text-decoration: none;
     border-radius: 4px;
     transition: 0.2s;
@@ -231,7 +253,7 @@
 
 /* HOVER EFFECT FOR GET IN TOUCH BUTTON */
 .Get-in-touch-elite-valley-code-comp-section-home-page:hover {
-    transform: translateY(-3px);
+    transform: var(--global-transform);
 }
 
 /* STYLING THE BUTTON THAT CONTAINS ONE BUTTON AND ON ICON */
@@ -245,8 +267,8 @@
 
 /* LERAN MORE BUTTON */
 .learn-more {
-    color: var(--text-color);
-    font-size: 14px;
+    color: var(--buttons-text-color);
+    font-size: var(--small-font-size);
     padding: 18px 10px 18px 32px;
     text-decoration: none;
     text-align: center;

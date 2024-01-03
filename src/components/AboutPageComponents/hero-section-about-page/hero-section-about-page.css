@@ -19,19 +19,19 @@
     --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
     --background-color-hero-section-about-page: linear-gradient(98deg, #E0F7FF 0%, #FFE7BB 100%);
     --padding-to-make-button: 15px 24px;
-    --margin-top-and-bottom-for-every-components: 100px 0px 100px 0px;
-    --only-margin-top-for-every-components: 100px 0px 0px 0px;
-    --only-margin-bottom-for-every-components: 0px 0px 100px 0px;
+    --margin-top-and-bottom-for-every-components: 100px 0px;
+    --only-margin-top-for-every-components: 100px;
+    --only-margin-bottom-for-every-components: 100px;
     --large-font-weight-for-titles: 48px;
     --large-font-weight-for-paragraph: 400px;
     --container-width-1920px-min-width: 50%;
-    --container-width-1920px-max-width: 70%;
+    --container-width-1920px-max-width: 90%;
     --container-width-1400px-max-width: 90%;
-    --container-width-992px-max-width: 95%;
-    --container-width-768px-max-width: 100%;
+    --container-width-992px-max-width: 70%;
+    --container-width-768px-max-width: 80%;
     --container-width-576px-max-width: 90%;
-    --container-width-400px-max-width: 90%;
-    --container-width-300px-max-width: 90%;
+    --container-width-400px-max-width: 95%;
+    --container-width-300px-max-width: 97%;
 }
 
 * {
@@ -44,7 +44,7 @@
 .container-hero-section-about-page {
     width: 100%;
     height: auto;
-    margin: var(--only-margin-bottom-for-every-components);
+    margin-bottom: var(--only-margin-bottom-for-every-components);
     background: var(--background-color-hero-section-about-page);
     display: flex;
     flex-direction: row;
@@ -57,7 +57,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -254,7 +254,7 @@
 
 /* Responsived in max width 768px */
 @media (max-width: 768px) {
-    .container-hero-section-about-page {
+    .container-content-about-page {
         width: var(--container-width-768px-max-width);
         padding: 15px 0px;
     }

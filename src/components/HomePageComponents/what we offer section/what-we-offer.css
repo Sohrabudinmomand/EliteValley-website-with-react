@@ -122,7 +122,6 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
-
 }
 
 .child-div {
@@ -209,6 +208,10 @@
         width: 100%;
         padding-bottom: 50px;
     }
+
+    .panel-box-what-we-offer-section {
+        width: 100%;
+    }
 }
 
 /* Responsived in max width 768px */
@@ -233,7 +236,7 @@
         line-height: 40px;
     }
 
-    .panel-box-what-we-offer-section {
+    /* .panel-box-what-we-offer-section {
         padding: 0px 8px;
-    }
+    } */
 }

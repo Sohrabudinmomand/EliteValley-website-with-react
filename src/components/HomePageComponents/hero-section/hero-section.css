@@ -1,16 +1,39 @@
 /* THE ROOT CSS */
 :root {
-    --titles-font-size: 48px;
-    --descriptions-font-size: 16px;
-    --mainBackgroundColr: #ffffff;
-    --mainColor: #FF5722;
-    --text-color: #071920;
+    --title-color: #FF5722;
+    --large-title-font-size: 48px;
+    --medium-title-font-size: 38px;
+    --small-title-font-size: 28px;
+    --black-paragraph-color: #0F0400;
+    --gray-paragraph-color: #667085;
+    --large-paragraph-font-size: 16px;
+    --small-paragraph-font-size: 14px;
+    --button-font-size: 14px;
+    --global-transform: translateY(-3px);
+    --buttons-bacnkground-Color: #FF5722;
+    --icons-color: #FF5722;
     --hover-color: #FF5722;
+    --border-orange: #FF5722;
     --border-gray: #CDE2E7;
     --bg-white: #ffffff;
-    --description-color: #667085;
+    --buttons-text-color: #0F0400;
     --border-top-at-the-footer: #EFEFEF;
     --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
+    --background-color-hero-section-about-page: linear-gradient(98deg, #E0F7FF 0%, #FFE7BB 100%);
+    --padding-to-make-button: 15px 24px;
+    --margin-top-and-bottom-for-every-components: 100px 0px;
+    --only-margin-top-for-every-components: 100px;
+    --only-margin-bottom-for-every-components: 100px;
+    --large-font-weight-for-titles: 48px;
+    --large-font-weight-for-paragraph: 400px;
+    --container-width-1920px-min-width: 50%;
+    --container-width-1920px-max-width: 90%;
+    --container-width-1400px-max-width: 90%;
+    --container-width-992px-max-width: 70%;
+    --container-width-768px-max-width: 80%;
+    --container-width-576px-max-width: 90%;
+    --container-width-400px-max-width: 95%;
+    --container-width-300px-max-width: 97%;
 }
 
 .container-hero-section-home-page {
@@ -43,16 +66,16 @@
 }
 
 .title-of-the-section {
-    color: var(--mainColor);
-    font-size: var(--titles-font-size);
+    color: var(--title-color);
+    font-size: var(--large-title-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 55spx;
 }
 
 .paragraph-of-the-section {
-    color: var(--text-color);
-    font-size: var(--descriptions-font-size);
+    color: var(--black-paragraph-color);
+    font-size: var(--large-paragraph-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;

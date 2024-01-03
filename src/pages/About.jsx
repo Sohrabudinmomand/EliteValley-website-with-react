@@ -3,6 +3,7 @@ import HeroSectionAboutPage from "../components/AboutPageComponents/hero-section
 import StorySectionAboutPage from "../components/AboutPageComponents/story-section-about-page/StorySectionAboutPage";
 import VissionAndMission from "../components/AboutPageComponents/vission-and-mission/VissionAndMission";
 import CoreValue from "../components/AboutPageComponents/core-value/CoreValue";
+import Footer from "../components/HomePageComponents/footer/Footer";
 
 function About() {
   return (
@@ -11,6 +12,7 @@ function About() {
       <StorySectionAboutPage />
       <VissionAndMission />
       <CoreValue />
+      <Footer />
     </div>
   );
 }

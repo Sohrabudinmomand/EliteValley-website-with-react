@@ -1,196 +1,264 @@
-/* RooTs for the navbar component */
-/* roots makes it easy to bring changes */
+/* THE ROOT CSS */
 :root {
-    --mainBackgroundColr: #ffffff;
-    --mainColor: #FF5722;
-    --text-color: #071920;
-    --hover-color: #FF5722;
+  --title-color: #FF5722;
+  --title-font-size: 48px;
+  --buttons-font-size: 14px;
+  --black-paragraph-color: #0F0400;
+  --gray-paragraph-color: #667085;
+  --paragraph-font-size: 16px;
+  --small-font-size: 14px;
+  --global-transform: translateY(-3px);
+  --buttons-bacnkground-Color: #FF5722;
+  --icons-color: #FF5722;
+  --hover-color: #FF5722;
+  --border-orange: #FF5722;
+  --border-gray: #CDE2E7;
+  --bg-white: #ffffff;
+  --buttons-text-color: #0F0400;
+  --border-top-at-the-footer: #EFEFEF;
+  --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
+  --background-color-hero-section-about-page: linear-gradient(98deg, #E0F7FF 0%, #FFE7BB 100%);
+  --padding-to-make-button: 15px 24px;
+  --margin-top-and-bottom-for-every-components: 100px 0px;
+  --only-margin-top-for-every-components: 100px;
+  --only-margin-bottom-for-every-components: 100px;
+  --large-font-weight-for-titles: 48px;
+  --large-font-weight-for-paragraph: 400px;
+  --container-width-1920px-min-width: 50%;
+  --container-width-1920px-max-width: 90%;
+  --container-width-1400px-max-width: 90%;
+  --container-width-992px-max-width: 70%;
+  --container-width-768px-max-width: 80%;
+  --container-width-576px-max-width: 90%;
+  --container-width-400px-max-width: 95%;
+  --container-width-300px-max-width: 97%;
 }
 
-/* STYLING THE HEADER DIV BOX */
-.header {
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container-navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--mainBackgroundColr);
+  border: 1px solid #FFE7BB;
+}
+
+.content-navbar {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: fit-content;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 60px;
+}
+
+
+
+.button-in-the-navbar {
+  /* width: 100px; */
+  height: auto;
+}
+
+.btn {
+  width: 100%;
+}
+
+.ul-navbar {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul-navbar li {
+  list-style-type: none;
+}
+
+
+.nav-links {
+  color: black;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+
+.nav-links:hover {
+  background-color: var(--hover-color);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+
+.btn {
+  width: 100%;
+  padding: var(--padding-to-make-button);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: var(--black-paragraph-color);
+  cursor: pointer;
+  background-color: var(--buttons-bacnkground-Color);
+}
+
+
+.dropdown-menu {
+  background: red;
+  width: 100px;
+  position: absolute;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+.dropdown-menu li:hover {
+  background: var(--hover-color);
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* @media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
+  }
+} */
+
+
+.ul-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.fa-bars {
+  color: #000000;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .ul-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 0 16px;
-    background: var(--mainBackgroundColr);
-    border: 1px solid #FFE7BB;
-}
+    height: 90vh;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
 
-/* logo box of the page */
-.logo-box {
-    width: 20%;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+  .ul-navbar.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
 
-/* logo image */
-.logo-img {
-    width: 120px;
-    height: 70px;
-}
+  .nav-links:hover {
+    background-color: #1888ff;
+    border-radius: 0;
+  }
 
-/* STYLING THE NAV BAR CONTENTS BOX */
-.navbar {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
-/* STYLING THE MANAGMENT PART */
-.nav-content-managment {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-}
-
-/* STYLING THE NAVBAR LINKS */
-.a-tags-in-navbar {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 16px;
-    font-style: normal;
-    padding: 0px 30px;
-    transition: 0.3s;
-}
-
-/* STYLING FOR THE HEADER */
-.navbar .a-tags-in-navbar:hover {
-    color: var(--mainColor);
-}
-
-.navbar .a-tags-in-navbar:active {
-    color: var(--mainColor);
-}
-
-/* STYLING THE BARS OR THE HUMBURGER ICON */
-.header .nav-btn {
-    padding: 5px;
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -1%;
+    right: 5%;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
     cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--mainColor);
-    visibility: hidden;
-    opacity: 0;
-    font-size: 20PX;
-}
+  }
 
-/* STYLING THE BUTTON FREE QOUTE */
-.free-quote {
-    padding: 8px 12px;
-    background-color: var(--mainColor);
-    color: #FFE7BB;
+  .fa-times {
+    color: #000000;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 15px 40px;
+    margin: 2rem auto;
     border-radius: 4px;
-    outline: none;
-    border: none;
-}
+    width: 100%;
+    background: #1888ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
 
-/* Responsived in min width 1920px */
-@media (min-width: 1920px) {
-    .navbar {
-        width: 60%;
-    }
-}
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #1888ff;
+    transition: 250ms;
+  }
 
-/* Responsived in max width 1920px */
-@media (max-width: 1920px) {
-
-    /* STYLING THE NAV BAR CONTENTS BOX */
-    .navbar {
-        width: 70%;
-    }
-}
-
-/* Responsived in max width 1400px */
-@media (max-width: 1400px) {
-
-    /* STYLING THE NAV BAR CONTENTS BOX */
-    .navbar {
-        width: 80%;
-    }
-}
-
-/* Responsived in max width 992px */
-@media (max-width: 992px) {
-
-    /* STYLING THE NAVBAR LINKS */
-    .a-tags-in-navbar {
-        padding: 0px 15px;
-    }
-}
-
-/* Responsived in max width 768px */
-@media (max-width: 768px) {
-
-    /* STYLING THE HEADER DIV BOX */
-    .header {
-        justify-content: space-between;
-    }
-
-    /* STYLING THE BARS OR THE HUMBURGER ICON */
-    .header .nav-btn {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    /* STYLING THE NAV BAR CONTENTS BOX */
-    .header .navbar {
-        position: fixed;
-        top: -100vh;
-        right: 0;
-        height: 80%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        background-color: var(--mainBackgroundColr);
-        transition: 1s;
-    }
-
-    /* STYLING THE MANAGMENT PART */
-    .nav-content-managment {
-        width: 100%;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .header .responsive_nav {
-        transform: translateY(100vh);
-    }
-
-    .navbar .nav-close-btn {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-    }
-
-    .navbar .a-tags-in-navbar {
-        font-size: 14px
-    }
-}
-
-@media (max-width: 576px) {
-    .header {
-        height: 50px;
-    }
-
-    /* logo image */
-    .logo-img {
-        width: 80px;
-        height: 40px;
-    }
+  button {
+    display: none;
+  }
 }

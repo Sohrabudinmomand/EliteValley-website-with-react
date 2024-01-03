@@ -1,66 +1,144 @@
-// importing react to use react library and useRef hook
-import React, { useRef } from "react";
-// importing the icons
-import { FaBars, FaTimes } from "react-icons/fa";
-// importing the logo
-import Logo from "./assets/logo-of-the-page.png";
-// importing link from ract router dom
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import LogoImage from "./assets/logo-of-the-page.png";
+import "@fortawesome/fontawesome-free/css/all.css";
 import "./navbar.css";
 
-// navbar starts here
 function Navbar() {
-  //the variable and the function below is used to toggle the navigation
-  const navRef = useRef();
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
+  const [dropdown, setDropdown] = useState(false);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
   };
 
   return (
-    // THE HEADER STARTS HERE
-    <header className="header">
-      {/* DIV BELOW USED FOR LOGO */}
-      <div className="logo-box">
-        <img className="logo-img" src={Logo} alt="logo" />
-      </div>
-      {/* THE NAVBAR STARTS HERE */}
-      <nav className="navbar" ref={navRef}>
-        {/* using div below to manage the navbar content with flexbox */}
-        <div className="nav-content-managment">
-          <Link to="/" className="a-tags-in-navbar">
-            Home
-          </Link>
-          <Link to="/about" className="a-tags-in-navbar">
-            About
-          </Link>
-          <Link to="/services" className="a-tags-in-navbar">
-            Services
-          </Link>
-          <Link to="/solutions" className="a-tags-in-navbar">
-            Solutions
-          </Link>
-          <Link to="/codecamp" className="a-tags-in-navbar">
-            CodeCamp
-          </Link>
-          <Link to="/contact" className="a-tags-in-navbar">
-            Contact
-          </Link>
+    <nav className="container-navbar">
+      <div className="content-navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img className="logo" src={LogoImage} alt="logo" />
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        {/* close the navbar in responisve */}
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes />
-        </button>
-        <button className="free-quote">Free Quote</button>
-      </nav>
-      {/* THE NAVBAR ENDS HERE */}
-      {/* display the navbar */}
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars />
-      </button>
-    </header>
-    // THE HEADER ENDS HERE
+
+        {/* unordered list starts here */}
+        <ul className={click ? "ul-navbar active" : "ul-navbar"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              About <i className="fas fa-caret-down" />
+            </Link>
+
+            {dropdown && (
+              <ul
+                onClick={handleClick}
+                className={click ? "dropdown-menu clicked" : "dropdown-menu"}
+              >
+                <li>
+                  <Link
+                    to="/about/our-team"
+                    className="dropdown-link nav-links"
+                    onClick={() => setClick(false)}
+                  >
+                    Our Team
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/our-company"
+                    className="dropdown-link nav-links"
+                    onClick={() => setClick(false)}
+                  >
+                    Our Company
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/why-us"
+                    className="dropdown-link nav-links"
+                    onClick={() => setClick(false)}
+                  >
+                    Why Us
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </li>
+
+          <li>
+            <Link
+              to="/services"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Services
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/solutions"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Solutions
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/codecamp"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Code Comp
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/sign-up"
+              className="nav-links-mobile"
+              onClick={closeMobileMenu}
+            >
+              Sign Up
+            </Link>
+          </li>
+        </ul>
+        {/* unordered list ends here */}
+
+        {/* button of the navbar */}
+        <Link className="button-in-the-navbar" to="sign-up">
+          <button className="btn">Sign Up</button>
+        </Link>
+      </div>
+    </nav>
   );
 }
 
 export default Navbar;
-// navbar ends here
