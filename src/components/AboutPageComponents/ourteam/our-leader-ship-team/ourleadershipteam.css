@@ -14,6 +14,7 @@
     --border-orange: #FF5722;
     --border-gray: #CDE2E7;
     --bg-white: #ffffff;
+    --font-color-content-our-leadership-team: #4E6770;
     --buttons-text-color: #0F0400;
     --border-top-at-the-footer: #EFEFEF;
     --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
@@ -40,6 +41,60 @@
     height: auto;
     margin: var(--margin-top-and-bottom-for-every-components);
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-our-leader-shipteam-about-page {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-box-our-leader-shipteam-about-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-our-leadership-team {
+    color: var(--font-color-content-our-leadership-team);
+    font-size: var(--paragraph-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.title-our-leadership-team {
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    margin: 10px 0px;
+}
+
+.team-members-info-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-row-info-box,
+.second-row-info-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
