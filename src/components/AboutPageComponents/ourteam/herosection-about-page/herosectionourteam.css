@@ -40,9 +40,12 @@
     box-sizing: border-box;
 }
 
+
+
 .container-hero-section-our-team {
     width: 100%;
     height: auto;
+    margin-bottom: var(--only-margin-bottom-for-every-components);
     background: var(--background-color-hero-section-about-our-team);
     display: flex;
     flex-direction: column;
@@ -58,6 +61,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.firstPng {
+    width: 44px;
+    height: 12px;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+.secondPng {
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.thirdPng {
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.fourthPng {
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.fifthPng {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
 }
 
 .description-box-hero-section-our-team {
@@ -142,11 +186,62 @@
     .content-hero-section-our-team {
         width: var(--container-width-1920px-min-width);
     }
+
+    .firstPng {
+        top: 35%;
+        left: 80%;
+    }
+
+    .secondPng {
+        top: 45%;
+        left: 100%;
+    }
+
+    .thirdPng {
+        top: 45%;
+        left: 10%;
+    }
+
+    .fourthPng {
+        top: 110%;
+        left: 30%;
+    }
+
+    .fifthPng {
+        top: 95%;
+        left: 90%;
+    }
 }
 
 @media (max-width: 1920px) {
     .content-hero-section-our-team {
         width: var(--container-width-1920px-max-width);
+    }
+
+
+    .firstPng {
+        top: 35%;
+        left: 80%;
+    }
+
+    .secondPng {
+        top: 45%;
+        left: 100%;
+    }
+
+    .thirdPng {
+        top: 45%;
+        left: 10%;
+    }
+
+    .fourthPng {
+        top: 110%;
+        left: 30%;
+    }
+
+    .fifthPng {
+        top: 95%;
+        left: 90%;
     }
 }
 
@@ -170,6 +265,32 @@
 
     .box-title-of-the-hero-section-about-page {
         width: 75%;
+    }
+
+
+    .firstPng {
+        top: 30%;
+        left: 100%;
+    }
+
+    .secondPng {
+        top: 45%;
+        left: 100%;
+    }
+
+    .thirdPng {
+        top: 45%;
+        left: 0%;
+    }
+
+    .fourthPng {
+        top: 110%;
+        left: 30%;
+    }
+
+    .fifthPng {
+        top: 95%;
+        left: 90%;
     }
 }
 
@@ -215,6 +336,27 @@
     .title-of-the-hero-section-about-page {
         font-size: 38px;
         line-height: 56px;
+    }
+
+
+    .firstPng {
+        display: none;
+    }
+
+    .secondPng {
+        display: none;
+    }
+
+    .thirdPng {
+        display: none;
+    }
+
+    .fourthPng {
+        display: none;
+    }
+
+    .fifthPng {
+        display: none;
     }
 }
 

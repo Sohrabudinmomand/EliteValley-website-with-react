@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home"
 import OurCompany from "./pages/OurCompony";
-import OurTeam from "./pages/OurTeam"
-import WhyUs from "./pages/WhyUs"
+import OurTeam from "./pages/OurTeam";
+import WhyUs from "./pages/WhyUs";
 import Services from "./pages/Services";
 import Solutions from "./pages/Solutions";
 import CodeCamp from "./pages/CodeComp"; // Corrected import path

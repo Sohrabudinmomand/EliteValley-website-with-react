@@ -3,6 +3,11 @@ import React from "react";
 import Firstimg from "./assets/team-member-one.jpeg";
 import Secondimg from "./assets/team-member-two.jpeg";
 import thirdimg from "./assets/team-member-three.jpeg";
+import FirstPng from "./assets/first-png.png";
+import SecondPng from "./assets/second-png.png";
+import ThirdPng from "./assets/third-png.png";
+import FourthPng from "./assets/fourth-png.png";
+import FifthPng from "./assets/fifth-png.png";
 
 import "./herosectionourteam.css";
 
@@ -10,6 +15,11 @@ const HerosectionOurTeam = () => {
   return (
     <div className="container-hero-section-our-team">
       <div className="content-hero-section-our-team">
+        <img className="firstPng" src={FirstPng} alt="" />
+        <img className="secondPng" src={SecondPng} alt="" />
+        <img className="thirdPng" src={ThirdPng} alt="" />
+        <img className="fourthPng" src={FourthPng} alt="" />
+        <img className="fifthPng" src={FifthPng} alt="" />
         <div className="description-box-hero-section-our-team">
           <div className="box-think-creative-slove">
             <span className="think-creative-slove">Think. Creative. Solve</span>

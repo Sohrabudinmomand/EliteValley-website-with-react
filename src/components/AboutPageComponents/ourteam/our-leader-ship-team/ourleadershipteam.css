@@ -1,0 +1,45 @@
+/* THE ROOT CSS */
+:root {
+    --title-color: #FF5722;
+    --title-font-size: 48px;
+    --buttons-font-size: 14px;
+    --black-paragraph-color: #0F0400;
+    --gray-paragraph-color: #667085;
+    --paragraph-font-size: 16px;
+    --small-font-size: 14px;
+    --global-transform: translateY(-3px);
+    --buttons-bacnkground-Color: #FF5722;
+    --icons-color: #FF5722;
+    --hover-color: #FF5722;
+    --border-orange: #FF5722;
+    --border-gray: #CDE2E7;
+    --bg-white: #ffffff;
+    --buttons-text-color: #0F0400;
+    --border-top-at-the-footer: #EFEFEF;
+    --container-footer: linear-gradient(180deg, #FFD8B4 0%, #FED9B7 57.29%, #FDD3AE 100%);
+    --background-color-hero-section-about-page: linear-gradient(98deg, #E0F7FF 0%, #FFE7BB 100%);
+    --background-color-hero-section-about-our-team: linear-gradient(103deg, rgba(255, 231, 187, 0.54) 0%, rgba(181, 239, 232, 0.00) 44.57%, rgba(255, 231, 187, 0.54) 95.08%);
+    --padding-to-make-button: 15px 24px;
+    --margin-top-and-bottom-for-every-components: 100px 0px;
+    --only-margin-top-for-every-components: 100px;
+    --only-margin-bottom-for-every-components: 100px;
+    --large-font-weight-for-titles: 48px;
+    --large-font-weight-for-paragraph: 400px;
+    --container-width-1920px-min-width: 50%;
+    --container-width-1920px-max-width: 60%;
+    --container-width-1400px-max-width: 85%;
+    --container-width-992px-max-width: 70%;
+    --container-width-768px-max-width: 80%;
+    --container-width-576px-max-width: 90%;
+    --container-width-400px-max-width: 97%;
+}
+
+
+.container-our-leader-shipteam-about-page {
+    width: 100%;
+    height: auto;
+    margin: var(--margin-top-and-bottom-for-every-components);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
