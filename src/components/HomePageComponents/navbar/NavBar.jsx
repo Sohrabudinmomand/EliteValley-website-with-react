@@ -45,7 +45,11 @@ function Navbar() {
             </Link>
           </li>
           <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+            <Link
+              to="/OurCompany"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
               About <i className="fas fa-caret-down" />
             </Link>
 
@@ -56,7 +60,7 @@ function Navbar() {
               >
                 <li>
                   <Link
-                    to="/about/our-team"
+                    to="/OurTeam"
                     className="dropdown-link nav-links"
                     onClick={() => setClick(false)}
                   >
@@ -65,7 +69,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/about/our-company"
+                    to="/OurCompany"
                     className="dropdown-link nav-links"
                     onClick={() => setClick(false)}
                   >
@@ -74,7 +78,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/about/why-us"
+                    to="/WhyUs"
                     className="dropdown-link nav-links"
                     onClick={() => setClick(false)}
                   >

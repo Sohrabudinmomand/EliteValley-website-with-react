@@ -1,8 +1,8 @@
 import React from "react";
-import OurTeam from "../components/HomePageComponents/navbar/meet-our-team-section/OurTeam";
+import HerosectionOurTeam from "../components/AboutPageComponents/ourteam/herosection-about-page/HerosectionOurTeam";
 
-const SecondPageInNavbar = () => {
-  return <OurTeam />;
+const OurTeam = () => {
+  return <HerosectionOurTeam />;
 };
 
-export default SecondPageInNavbar;
+export default OurTeam;

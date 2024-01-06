@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home"
-import About from "./pages/About";
-import OurCompony from "./pages/OurCompony";
-import OurTeam from "./pages/OurTeam";
+import OurCompany from "./pages/OurCompony";
+import OurTeam from "./pages/OurTeam"
 import WhyUs from "./pages/WhyUs"
 import Services from "./pages/Services";
 import Solutions from "./pages/Solutions";
@@ -18,8 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/OurCompony" element={<OurCompony />} />
+        <Route path="/OurCompany" element={<OurCompany />} />
         <Route path="/OurTeam" element={<OurTeam />} />
         <Route path="/WhyUs" element={<WhyUs />} />
         <Route path="/services" element={<Services />} />
