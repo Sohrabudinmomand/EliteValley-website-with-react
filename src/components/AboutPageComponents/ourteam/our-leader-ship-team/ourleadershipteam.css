@@ -144,3 +144,97 @@
     text-align: center;
     margin: 5px 0px;
 }
+
+
+
+/* Responsived in min width 1920px */
+@media (min-width: 1920px) {
+    .content-our-leader-shipteam-about-page {
+        width: var(--container-width-1920px-min-width);
+    }
+}
+
+@media (max-width: 1920px) {
+    .content-our-leader-shipteam-about-page {
+        width: var(--container-width-1920px-max-width);
+    }
+}
+
+/* Responsived in max width 1400px */
+@media (max-width: 1400px) {
+    .content-our-leader-shipteam-about-page {
+        width: var(--container-width-1400px-max-width);
+    }
+}
+
+/* Responsived in max width 992px */
+@media (max-width: 992px) {
+    .content-our-leader-shipteam-about-page {
+        width: var(--container-width-992px-max-width);
+    }
+
+    .first-row-info-box,
+    .second-row-info-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        place-items: center;
+        justify-content: space-between;
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+
+    .member-info-box {
+        width: 90%;
+    }
+}
+
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+    .content-our-leader-shipteam-about-page {
+        width: var(--container-width-768px-max-width);
+    }
+}
+
+/* Responsived in max width 567px */
+@media (max-width: 576px) {
+    .content-our-leader-shipteam-about-page {
+        width: var(--container-width-576px-max-width);
+    }
+
+    .first-row-info-box,
+    .second-row-info-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        place-items: center;
+        justify-content: space-between;
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+
+    .member-info-box {
+        width: 80%;
+    }
+}
+
+
+/* Responsived in max width 567px */
+@media (max-width: 400px) {
+    .content-our-leader-shipteam-about-page {
+        width: var(--container-width-400px-max-width);
+    }
+
+    .title-our-leadership-team {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .member-info-box {
+        width: 100%;
+    }
+
+
+}
