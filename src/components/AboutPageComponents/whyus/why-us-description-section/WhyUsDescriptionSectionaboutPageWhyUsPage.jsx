@@ -1,5 +1,5 @@
 import React from "react";
-import ImgWhyUsDescription from "./assets/why-us-description-image.png";
+import ImgWhyUsDescription from "./assets/why-us-description-img.png";
 import "./whyusdescriptionaboutpagewhyuspage.css";
 
 const WhyUsDescriptionSectionaboutPageWhyUsPage = () => {
