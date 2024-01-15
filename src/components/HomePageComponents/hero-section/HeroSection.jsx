@@ -21,19 +21,19 @@ const HeroSection = () => {
             digital solutions that meet your unique
           </p>
           {/* the box below used to make two buttons in row with flex */}
-          <div className="box-for-buttons">
+          <div className="box-for-buttons-hero-section-home-page">
             {/* GET IN TOUCH BUTTONS */}
-            <a href="#" className="Get-in-touch">
+            <a href="#" className="downlaod-button-hero-section-home-page">
               Downlaod App
             </a>
             {/* using the box below to use flex box for the button and the icon */}
-            <div className="making-elements-flex">
+            <div className="making-elements-flex-hero-section-home-page">
               {/* LEARN MORE BUTTON */}
-              <a href="#" className="learn-more">
+              <a href="#" className="learn-more-hero-section-home-page">
                 Learn More
               </a>
               {/* Right Arrow icon */}
-              <FaArrowRight className="right-arrow" />
+              <FaArrowRight className="right-arrow-hero-section-home-page" />
             </div>
           </div>
         </div>
