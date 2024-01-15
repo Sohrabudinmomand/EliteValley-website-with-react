@@ -13,6 +13,7 @@
   --hover-color: #ff5722;
   --buttons-text-color: #0f0400;
   --buttons-font-size: 14px;
+  --padding-to-make-button: 15px 24px;
   --global-transform: translateY(-3px);
   --icons-color: #ff5722;
   --border-orange: #ff5722;
@@ -30,7 +31,6 @@
     #e0f7ff 0%,
     #ffe7bb 100%
   );
-  --padding-to-make-button: 15px 24px;
   --margin-top-and-bottom-for-every-components: 100px 0px;
   --only-margin-top-for-every-components: 100px;
   --only-margin-bottom-for-every-components: 100px;
@@ -91,7 +91,7 @@
 }
 
 .box-for-buttons-hero-section-home-page {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,7 +102,7 @@
   color: var(--buttons-text-color);
   font-size: 14px;
   background-color: var(--buttons-bacnkground-Color);
-  padding: var(--padding-to-make-button);
+  padding: 15px 24px;
   text-decoration: none;
   border-radius: 4px;
   transition: 0.2s;
@@ -123,11 +123,9 @@
 .learn-more-hero-section-home-page {
   color: var(--text-color);
   font-size: 14px;
-  padding: var(--padding-to-make-button);
+  padding: 7px 12px 7px 24px;
   text-decoration: none;
   text-align: center;
-  font-weight: 400;
-  line-height: 18px;
   letter-spacing: 0.45px;
   transition: 0.2s;
 }
@@ -150,7 +148,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -189,11 +187,6 @@
 @media (max-width: 992px) {
   .container-content-home-page {
     width: var(--container-width-992px-max-width);
-  }
-
-  .image-box {
-    justify-content: center;
-    margin-bottom: 60px;
   }
 
   .image-of-the-hero-section {
