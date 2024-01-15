@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogoImage from "./assets/logo-of-the-page.png";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -7,10 +7,9 @@ import "./navbar.css";
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-
-  const [dropdown, setDropdown] = useState(false);
   const closeMobileMenu = () => setClick(false);
 
+  const [dropdown, setDropdown] = useState(false);
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -27,15 +26,34 @@ function Navbar() {
     }
   };
 
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 992);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 992);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // make this one false
+
   return (
+    // navbar starts here
     <nav className="container-navbar">
+      {/* navbar content starts here */}
       <div className="content-navbar">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img className="logo" src={LogoImage} alt="logo" />
-        </Link>
+        {/* THIS ICON WILL APPEAR WHEN THE APP OPEND IN SCREEN BELOW 992PX */}
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
+        {/* logo */}
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img className="logo" src={LogoImage} alt="logo" />
+        </Link>
 
         {/* unordered list starts here */}
         <ul className={click ? "ul-navbar active" : "ul-navbar"}>
@@ -44,6 +62,7 @@ function Navbar() {
               Home
             </Link>
           </li>
+
           <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             <Link className="nav-links" onClick={closeMobileMenu}>
               About <i className="fas fa-caret-down" />
@@ -120,24 +139,23 @@ function Navbar() {
               Contact
             </Link>
           </li>
-          <li>
-            <Link
-              to="/sign-up"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              Sign Up
+          {!isWideScreen && (
+            <Link className="button-in-the-navbar" to="sign-up">
+              <button className="btn">Sign Up</button>
             </Link>
-          </li>
+          )}
         </ul>
-        {/* unordered list ends here */}
 
-        {/* button of the navbar */}
-        <Link className="button-in-the-navbar" to="sign-up">
-          <button className="btn">Sign Up</button>
-        </Link>
+        {isWideScreen && (
+          <Link className="button-in-the-navbar" to="sign-up">
+            <button className="btn">Sign Up</button>
+          </Link>
+        )}
+        {/* unordered list ends here */}
       </div>
+      {/* navbar content ends here */}
     </nav>
+    // navbar ends here
   );
 }
 
