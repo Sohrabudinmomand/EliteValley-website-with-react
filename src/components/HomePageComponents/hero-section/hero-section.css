@@ -187,29 +187,10 @@
 @media (max-width: 992px) {
   .container-content-home-page {
     width: var(--container-width-992px-max-width);
-  }
-
-  .image-of-the-hero-section {
-    width: 300px;
-    height: 370px;
-  }
-}
-
-/* Responsived in max width 768px */
-@media (max-width: 768px) {
-  .container-content-home-page {
-    width: var(--container-width-768px-max-width);
     padding: 15px 0px;
-  }
-
-  .container-content-home-page {
-    width: 80%;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .title-of-the-section {
-    font-size: var(--768px-max-width-title-font-size);
+    gap: 75px;
   }
 
   .image-box {
@@ -218,7 +199,7 @@
   }
 
   .image-of-the-hero-section {
-    width: 300px;
+    width: 80%;
     height: 380px;
     order: 2;
   }
@@ -226,6 +207,17 @@
   .description-box {
     width: 100%;
     order: 1;
+  }
+}
+
+/* Responsived in max width 768px */
+@media (max-width: 768px) {
+  .container-content-home-page {
+    width: var(--container-width-768px-max-width);
+  }
+
+  .title-of-the-section {
+    font-size: var(--768px-max-width-title-font-size);
   }
 }
 
