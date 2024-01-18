@@ -74,7 +74,10 @@ const HowItWorks = () => {
               {/* using the box below to use flex box for the button and the icon */}
               <div className="making-elements-flex-how-it-works">
                 {/* LEARN MORE BUTTON */}
-                <a href="#" className="learn-more-how-it-works">
+                <a
+                  href="#"
+                  className="learn-more-how-it-works  padding-left-zero"
+                >
                   Learn More
                 </a>
                 {/* Right Arrow icon */}
