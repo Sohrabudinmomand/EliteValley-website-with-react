@@ -30,7 +30,7 @@ const WhatWeOffer = () => {
     if (containerWidth > 1920) {
       return expandedDiv === divNumber ? "500px" : "100px";
     } else if (containerWidth <= 1920 && containerWidth > 768) {
-      return expandedDiv === divNumber ? "300px" : "80px";
+      return expandedDiv === divNumber ? "400px" : "80px";
     } else if (containerWidth < 576) {
       return "300px";
     } else if (containerWidth < 300) {
